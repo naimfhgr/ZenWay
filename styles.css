@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #333;
   background-color: #f9f9f9;
   line-height: 1.6;
@@ -53,6 +53,7 @@ header {
 
 .hero h1 {
   font-size: 2.5rem;
+  font-weight: bold;
   margin-bottom: 20px;
   color: #333;
 }
@@ -65,15 +66,15 @@ header {
 
 .cta-button {
   text-decoration: none;
-  color: #323232;
-  background-color: #ddf2dc;
+  color: #dddfd5;
+  background-color: #616845;
   padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 .cta-button:hover {
-  background-color: #717a70;
+  color: #616845;
+  background-color: #dddfd5;
 }
 
 /* Cards Section */
