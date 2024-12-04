@@ -22,12 +22,6 @@ header {
   border-bottom: 1px solid #ddd;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
-}
-
 .navbar {
   list-style: none;
   display: flex;
@@ -58,6 +52,18 @@ color: #616845;
 background-color: #DDDFD5;
 }
 
+.navbar li a.cta-button {
+  text-decoration: none;
+  color: #dddfd5;
+  background-color: #616845;
+  padding: 10px 20px;
+}
+
+.navbar li a.cta-button:hover {
+  color: #616845;
+  background-color: #dddfd5;
+}
+
 /* Hero Section */
 .hero {
   text-align: center;
@@ -83,7 +89,6 @@ background-color: #DDDFD5;
   color: #dddfd5;
   background-color: #616845;
   padding: 10px 20px;
-  font-weight: lighter;
 }
 
 .cta-button:hover {
@@ -101,9 +106,11 @@ background-color: #DDDFD5;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 8px;
   overflow: hidden;
   width: 300px;
   text-align: center;
@@ -112,7 +119,7 @@ background-color: #DDDFD5;
 
 .card img {
   width: 100%;
-  height: auto;
+  height: 200px;
 }
 
 .card p {
@@ -121,11 +128,108 @@ background-color: #DDDFD5;
   color: #666;
 }
 
+.card a {
+  display: inline-block; /* Force it to behave like a button */
+  margin: 10px auto 20px; /* Top and bottom spacing, center horizontally */
+  padding: 10px 20px; /* Adjust padding for button size */
+}
+
 /* Footer */
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #ddf2dc;
-  color: black;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  padding: 40px 20px;
+  border-top: 1px solid #ddd;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-logo {
+  flex-grow: 2;
+  text-align: left;
+}
+
+.footer-nav,
+.footer-contact {
+  flex: 1;
+  text-align: left;
+  min-width: 200px;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+.footer-nav h3,
+.footer-contact h3 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav ul li {
+  margin-bottom: 10px;
+}
+
+.footer-nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-nav ul li a:hover {
+  color: #88be85;
+}
+
+.footer-contact p {
+  margin-bottom: 10px;
+}
+
+.footer-contact a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #88be85;
+}
+
+.footer-bottom {
+  display: flex; /* Use Flexbox for layout */
+  justify-content: space-between; /* Push <p> to the left and nav to the right */
+  align-items: center; /* Align both vertically */
+  padding: 10px 20px; /* Add some padding */
+  border-top: 1px solid #ddd; /* Optional: Add a top border for separation */
+  font-size: 0.9rem; /* Adjust font size as needed */
+}
+
+.footer-bottom p {
+  margin: 0; /* Remove default margin from <p> */
+}
+
+.footer-links {
+  display: flex; /* Use Flexbox for horizontal layout */
+  gap: 20px; /* Add spacing between links */
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  color: #88be85;
 }
