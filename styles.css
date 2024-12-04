@@ -42,18 +42,20 @@ header {
   font-weight: 500;
 }
 
-.navbar li a:hover {
+.navbar li a:hover{
   color: #616845;
 }
 
-.navbar .cta-button a {
+.navbar li.cta-button a {
+  text-decoration: none;
   color: #dddfd5;
 }
 
-.navbar .cta-button a:hover {
-  background-color: #dddfd5;
+.navbar li.cta-button a:hover {
   color: #616845;
+  background-color: #dddfd5;
 }
+
 
 /* Hero Section */
 .hero {
