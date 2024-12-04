@@ -22,12 +22,18 @@ header {
   border-bottom: 1px solid #ddd;
 }
 
+/* Navbar Styling */
 .navbar {
   list-style: none;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.navbar li {
+  display: flex;
+  align-items: center;
 }
 
 .navbar li a {
@@ -40,16 +46,13 @@ header {
   color: #616845;
 }
 
-.navbar li.cta-button a{
-  text-decoration: none;
+.navbar .cta-button a {
   color: #dddfd5;
-  background-color: #616845;
-  padding: 5px 10px;
 }
 
-.navbar li.cta-button a:hover {
-  color: #616845;
+.navbar .cta-button a:hover {
   background-color: #dddfd5;
+  color: #616845;
 }
 
 /* Hero Section */
@@ -72,6 +75,7 @@ header {
   color: #666;
 }
 
+/* CTA Button */
 .cta-button {
   text-decoration: none;
   color: #dddfd5;
