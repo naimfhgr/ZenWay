@@ -32,7 +32,7 @@ header {
 
 .navbar li a {
   text-decoration: none;
-  color: #0E162C;
+  color: #0e162c;
   font-weight: 500;
 }
 
@@ -40,16 +40,16 @@ header {
   color: #616845;
 }
 
-.navbar li.green_button a{
-color:#DDDFD5;
-background-color: #616845;
-padding: 5px 10px;
-cursor: pointer;
+.navbar li.green_button a {
+  color: #dddfd5;
+  background-color: #616845;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 .navbar li.green_button a:hover {
-color: #616845;
-background-color: #DDDFD5;
+  color: #616845;
+  background-color: #dddfd5;
 }
 
 .navbar li a.cta-button {
