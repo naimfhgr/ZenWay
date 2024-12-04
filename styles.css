@@ -36,12 +36,24 @@ header {
 
 .navbar li a {
   text-decoration: none;
-  color: #333;
+  color: #0E162C;
   font-weight: 500;
 }
 
 .navbar li a:hover {
-  color: #88be85;
+  color: #616845;
+}
+
+.navbar li.green_button a{
+color:#DDDFD5;
+background-color: #616845;
+padding: 5px 10px;
+cursor: pointer;
+}
+
+.navbar li.green_button a:hover {
+color: #616845;
+background-color: #DDDFD5;
 }
 
 /* Hero Section */
