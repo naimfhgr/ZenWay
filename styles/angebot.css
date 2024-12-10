@@ -205,7 +205,6 @@ header {
 }
 
 .design_img {
-  padding-right: 20px;
   grid-column: 3;
   grid-row: 2;
   background-color: #dddfd5;
@@ -217,15 +216,35 @@ header {
 }
 
 .white_space_arrow_right {
-grid-column: span 3;
-text-align: center;
-padding: 50px;
+grid-column: span 1;
+padding: 60px;
   }
+
+.arrow_right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow_right_body {
+  width: 450px; /* Länge des Pfeilkörpers */
+  height: 4px; /* Dicke der Linie */
+  background-color: #616845;
+  }
+
+.arrow_right_head {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 20px solid #616845;
+  }
+
 
 .beratung_img {
   grid-column: 1;
   grid-row: 4;
-  padding-right: 20px;
   background-color: #dddfd5;
 }
 
@@ -246,11 +265,32 @@ padding: 50px;
   background-color: #dddfd5;
 }
 
-.white_space__arrow_left {
+.white_space_arrow_left {
   grid-column: span 3;
-  text-align: center;
-  padding: 50px;
+  padding: 60px;
 }
+
+  .arrow_left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  }
+
+  .arrow_left_body {
+    width: 450px; /* Länge des Pfeilkörpers */
+    height: 4px; /* Dicke der Linie */
+    background-color: #616845;
+    }
+  
+  .arrow_left_head {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 20px solid #616845;
+    }
+
 
 .umsetzung_text {
   display: flex;
@@ -267,7 +307,6 @@ padding: 50px;
 .umsetzung_img {
   grid-column: 3;
   grid-row: 6;
-  padding-right: 20px;
   background-color: #dddfd5;
 }
 
@@ -279,7 +318,6 @@ padding: 50px;
 .abonnement_img {
  grid-column: 1; 
  grid-row: 8;
- padding-right: 20px;
  background-color: #dddfd5;
 }
 
@@ -300,6 +338,13 @@ padding: 50px;
   background-color: #dddfd5;
 }
 
+.underline {
+  display: inline-block;
+  border-bottom: 3px solid #616845; /* Farbe des Strichs */
+  padding-bottom: 5px; /* Abstand zwischen Text und Strich */
+  
+  
+
 @media (max-width: 768px) {
   
 
@@ -311,139 +356,41 @@ padding: 50px;
   .design_img {
     grid-row: 3;
     grid-column: span 3;
-    padding: 0%;
-    margin-bottom: 10vw;
   }
 
+
   .beratung_text {
-    grid-row: 4;
+    grid-row: 5;
     grid-column: span 3;
     }
 
     .beratung_img {
-      grid-row: 5;
-      grid-column: span 3;
-      padding: 0%;
-      margin-bottom: 10vw;
-    }
-
-    .umsetzung_text {
       grid-row: 6;
       grid-column: span 3;
     }
 
-    .umsetzung_img {
-      grid-row: 7;
+    .umsetzung_text {
+      grid-row: 8;
       grid-column: span 3;
-      padding: 0%;
-      margin-bottom: vw;
     }
 
+    .umsetzung_img {
+      grid-row: 9;
+      grid-column: span 3;
+    }
 
+    .abonnement_text {
+      grid-row: 11;
+      grid-column: span 3;
+    }
 
+    .abonnement_img {
+      grid-row: 12;
+      grid-column: span 3;
 
+    }
 
 
   }
 
 
-/* Footer */
-footer {
-  font-size: 1rem;
-  padding: 40px 20px;
-  border-top: 1px solid #ddd;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 20px;
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.footer-logo {
-  flex-grow: 2;
-  text-align: left;
-}
-
-.footer-nav,
-.footer-contact {
-  flex: 1;
-  text-align: left;
-  min-width: 200px;
-  margin-bottom: 20px;
-}
-
-.footer-logo img {
-  width: 150px;
-}
-
-.footer-nav h3,
-.footer-contact h3 {
-  font-size: 1rem;
-  margin-bottom: 15px;
-}
-
-.footer-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-nav ul li {
-  margin-bottom: 10px;
-}
-
-.footer-nav ul li a {
-  text-decoration: none;
-  color: #333;
-}
-
-.footer-nav ul li a:hover {
-  color: #88be85;
-}
-
-.footer-contact p {
-  margin-bottom: 10px;
-}
-
-.footer-contact a {
-  color: #333;
-  text-decoration: none;
-}
-
-.footer-contact a:hover {
-  color: #88be85;
-}
-
-.footer-bottom {
-  display: flex; /* Use Flexbox for layout */
-  justify-content: space-between; /* Push <p> to the left and nav to the right */
-  align-items: center; /* Align both vertically */
-  padding: 10px 20px; /* Add some padding */
-  border-top: 1px solid #ddd; /* Optional: Add a top border for separation */
-  font-size: 0.9rem; /* Adjust font size as needed */
-}
-
-.footer-bottom p {
-  margin: 0; /* Remove default margin from <p> */
-}
-
-.footer-links {
-  display: flex; /* Use Flexbox for horizontal layout */
-  gap: 20px; /* Add spacing between links */
-}
-
-.footer-links a {
-  text-decoration: none;
-  color: #333;
-  margin: 0 10px;
-}
-
-.footer-links a:hover {
-  color: #88be85;
-}
