@@ -180,12 +180,8 @@ header {
 .whole_grid {
   display: grid;
   box-sizing: border-box;
-  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-}
-
-.color_wrap {
-  background-color: #dddfd5;
 }
 
 .white_space {
@@ -220,8 +216,121 @@ header {
   height:100%;
 }
 
+.white_space_arrow_right {
+grid-column: span 3;
+text-align: center;
+padding: 50px;
+  }
+
+.beratung_img {
+  grid-column: 1;
+  grid-row: 4;
+  padding-right: 20px;
+  background-color: #dddfd5;
+}
+
+.beratung_img img {
+  width: 100%;
+  height:100%;
+}
+
+.beratung_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px;
+  grid-row: 4;
+  grid-column: span 2;
+  background-color: #dddfd5;
+}
+
+.white_space__arrow_left {
+  grid-column: span 3;
+  text-align: center;
+  padding: 50px;
+}
+
+.umsetzung_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px;
+  grid-column: span 2;
+  grid-row: 6;
+  background-color: #dddfd5;
+}
+
+.umsetzung_img {
+  grid-column: 3;
+  grid-row: 6;
+  padding-right: 20px;
+  background-color: #dddfd5;
+}
+
+.umsetzung_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.abonnement_img {
+ grid-column: 1; 
+ grid-row: 8;
+ padding-right: 20px;
+ background-color: #dddfd5;
+}
+
+.abonnement_img img{
+  width: 100%;
+  height: 100%;
+}
+
+.abonnement_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px;
+  grid-column: span 2;
+  grid-row: 8;
+  background-color: #dddfd5;
+}
+
+@media (max-width: 768px) {
+  
+
+    
+  .design_text  {
+    grid-column: span 3;
+  }  
+
+  .design_img {
+    grid-row: 3;
+    grid-column: span 3;
+    padding: 0%;
+    margin-bottom: 10vw;
+  }
+
+  .beratung_text {
+    grid-row: 4;
+    grid-column: span 3;
+    }
+
+    .beratung_img {
+      grid-row: 5;
+      grid-column: span 3;
+      padding: 0%;
+      margin-bottom: 10vw;
+    }
 
 
+
+
+  }
 
 
 /* Footer */
@@ -252,6 +361,7 @@ footer {
   flex: 1;
   text-align: left;
   min-width: 200px;
+  margin-bottom: 20px;
 }
 
 .footer-logo img {
