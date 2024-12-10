@@ -327,6 +327,20 @@ padding: 50px;
       margin-bottom: 10vw;
     }
 
+    .umsetzung_text {
+      grid-row: 6;
+      grid-column: span 3;
+    }
+
+    .umsetzung_img {
+      grid-row: 7;
+      grid-column: span 3;
+      padding: 0%;
+      margin-bottom: vw;
+    }
+
+
+
 
 
 
