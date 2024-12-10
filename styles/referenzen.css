@@ -98,6 +98,18 @@ header {
   box-sizing: border-box; /* Includes padding in dimensions */
 }
 
+/* Green Section Quote */
+.green-section-quote {
+  display: flex;
+  flex-direction: row; /* Aligns text and image side by side */
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d8e2cc; /* Greenish background */
+  padding: 20px;
+  height: 400px;
+  box-sizing: border-box; /* Includes padding in dimensions */
+}
+
 /* Left Text Container */
 .green-section .text-content {
   flex: 1; /* Takes up half the section width */
