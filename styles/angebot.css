@@ -180,16 +180,49 @@ header {
 .whole_grid {
   display: grid;
   box-sizing: border-box;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 33.33% 33.33% 33.33%;
   grid-template-rows: auto;
 }
 
-.white_space {
-  height: 276.744px;
-  width: 1849px;
-  grid-column: 1/3;
-  grid-row: 1;
+.color_wrap {
+  background-color: #dddfd5;
 }
+
+.white_space {
+  text-align: center;
+  margin: 30px;
+  padding: 20px;
+  grid-row: 1;
+  grid-column: span 3;
+}
+
+.design_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px;
+  grid-column: span 2;
+  grid-row: 2;
+  background-color: #dddfd5;
+}
+
+.design_img {
+  padding-right: 20px;
+  grid-column: 3;
+  grid-row: 2;
+  background-color: #dddfd5;
+}
+
+.design_img img{
+  width: 100%;
+  height:100%;
+}
+
+
+
+
 
 /* Footer */
 footer {
