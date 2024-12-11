@@ -187,7 +187,7 @@ header {
   display: grid;
   box-sizing: border-box;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 200px 500px 100px 500px 100px 500px 100px 500px;
+  grid-template-rows: auto;
 }
 
 .white_space {
@@ -434,12 +434,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  
 
-  .whole_grid {
-    grid-template-rows: auto
-  }
-  
   .design_text {
     grid-column: span 3;
   }
