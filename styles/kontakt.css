@@ -18,7 +18,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   border-bottom: 1px solid #ddd;
 }
 
@@ -70,7 +70,7 @@ header {
 .hero {
   text-align: center;
   padding: 100px 0px;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
 }
 
 .hero h1 {
@@ -80,9 +80,10 @@ header {
 }
 
 .hero p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+  font-size: 0.9rem;
   color: #666;
+  text-align: center;
+  margin: 20px 150px;
 }
 
 .block {
@@ -181,20 +182,62 @@ header {
   padding: 10px 20px;
 }
 
-/* angebot.html */
-
-.whole_grid {
-  display: grid;
-  box-sizing: border-box;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+/* Contact Form */
+.contact-form {
+  background-color: #dddfd5;
+  padding: 40px 20px;
+  border: 1px solid #ddd;
+  max-width: 600px;
+  margin: 50px auto;
 }
 
-.white_space {
-  height: 276.744px;
-  width: 1849px;
-  grid-column: 1/3;
-  grid-row: 1;
+.contact-form h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  color: #333;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #88be85;
+  outline: none;
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  color: #dddfd5;
+  background-color: #616845;
+  border: none;
+  font-size: 1rem;
+  cursor: alias;
+}
+
+.contact-form button:hover {
+  color: #616845;
+  background-color: #b8bea2;
+  transition: all 0.3s ease; /* Adds a cool & smooth transition :) */
 }
 
 /* Footer */
