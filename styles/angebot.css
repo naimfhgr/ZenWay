@@ -193,7 +193,7 @@ header {
 .white_space {
   text-align: center;
   margin: 30px;
-  padding: 20px;
+  padding: 30px;
   grid-row: 1;
   grid-column: span 3;
 }
@@ -224,19 +224,31 @@ header {
   object-fit: cover; /* skaliert Bild,um den Bereich zu füllen */ 
 }
 
+.white_space_arrow_right, .white_space_arrow_left {
+  display: flex; /* Flexbox aktivieren */
+  align-items: center; /* Vertikale Zentrierung */
+  padding: 50px;
+}
+
 .white_space_arrow_right {
   grid-column: span 1;
-  padding: 60px;
+  justify-content: center; /* Horizontale Zentrierung */
 }
 
-.arrow_right {
-  display: flex;
+.white_space_arrow_left {
+  grid-column: span 3;
+  justify-content: right; /* Horizontale Zentrierung */
+}
+
+.arrow_right, .arrow_left {
+  display: flex; /* Flexbox für die Pfeile */
+  align-items: center; /* Vertikale Zentrierung */
+  justify-content: center; /* Zentriert Pfeilinhalt horizontal */
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 
-.arrow_right_body {
+ 
+.arrow_right_body, .arrow_left_body {
   width: 450px; /* Länge des Pfeilkörpers */
   height: 4px; /* Dicke der Linie */
   background-color: #616845;
@@ -270,23 +282,6 @@ header {
   background-color: #dddfd5;
 }
 
-.white_space_arrow_left {
-  grid-column: span 3;
-  padding: 60px;
-}
-
-.arrow_left {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: right;
-}
-
-.arrow_left_body {
-  width: 450px; /* Länge des Pfeilkörpers */
-  height: 4px; /* Dicke der Linie */
-  background-color: #616845;
-}
 
 .arrow_left_head {
   width: 0;
