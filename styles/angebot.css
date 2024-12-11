@@ -85,6 +85,12 @@ header {
   margin-bottom: 30px;
   color: #666;
 }
+.block {
+  background-color: #616845;
+  block-size: 5px;
+  width: 5%;
+  margin: 0 auto; /* Centers horizontally and adds top margin */
+}
 
 /* Green Section */
 .green-section {
@@ -210,15 +216,15 @@ header {
   background-color: #dddfd5;
 }
 
-.design_img img{
+.design_img img {
   width: 100%;
-  height:100%;
+  height: 100%;
 }
 
 .white_space_arrow_right {
-grid-column: span 1;
-padding: 60px;
-  }
+  grid-column: span 1;
+  padding: 60px;
+}
 
 .arrow_right {
   display: flex;
@@ -231,7 +237,7 @@ padding: 60px;
   width: 450px; /* Länge des Pfeilkörpers */
   height: 4px; /* Dicke der Linie */
   background-color: #616845;
-  }
+}
 
 .arrow_right_head {
   width: 0;
@@ -239,8 +245,7 @@ padding: 60px;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-left: 20px solid #616845;
-  }
-
+}
 
 .beratung_img {
   grid-column: 1;
@@ -250,7 +255,7 @@ padding: 60px;
 
 .beratung_img img {
   width: 100%;
-  height:100%;
+  height: 100%;
 }
 
 .beratung_text {
@@ -270,27 +275,26 @@ padding: 60px;
   padding: 60px;
 }
 
-  .arrow_left {
+.arrow_left {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: right;
-  }
+}
 
-  .arrow_left_body {
-    width: 450px; /* Länge des Pfeilkörpers */
-    height: 4px; /* Dicke der Linie */
-    background-color: #616845;
-    }
-  
-  .arrow_left_head {
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-right: 20px solid #616845;
-    }
+.arrow_left_body {
+  width: 450px; /* Länge des Pfeilkörpers */
+  height: 4px; /* Dicke der Linie */
+  background-color: #616845;
+}
 
+.arrow_left_head {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 20px solid #616845;
+}
 
 .umsetzung_text {
   display: flex;
@@ -316,12 +320,12 @@ padding: 60px;
 }
 
 .abonnement_img {
- grid-column: 1; 
- grid-row: 8;
- background-color: #dddfd5;
+  grid-column: 1;
+  grid-row: 8;
+  background-color: #dddfd5;
 }
 
-.abonnement_img img{
+.abonnement_img img {
   width: 100%;
   height: 100%;
 }
@@ -342,56 +346,145 @@ padding: 60px;
   display: inline-block;
   border-bottom: 3px solid #616845; /* Farbe des Strichs */
   padding-bottom: 5px; /* Abstand zwischen Text und Strich */
-  }
-  
-  
+}
+
+/* Footer */
+footer {
+  font-size: 1rem;
+  padding: 40px 20px;
+  border-top: 1px solid #ddd;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1500px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.footer-logo {
+  flex-grow: 2;
+  text-align: left;
+}
+
+.footer-nav,
+.footer-contact {
+  flex: 1;
+  text-align: left;
+  min-width: 200px;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+.footer-nav h3,
+.footer-contact h3 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav ul li {
+  margin-bottom: 10px;
+}
+
+.footer-nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-nav ul li a:hover {
+  color: #88be85;
+}
+
+.footer-contact p {
+  margin-bottom: 10px;
+}
+
+.footer-contact a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #88be85;
+}
+
+.footer-bottom {
+  display: flex; /* Use Flexbox for layout */
+  justify-content: space-between; /* Push <p> to the left and nav to the right */
+  align-items: center; /* Align both vertically */
+  padding: 10px 20px; /* Add some padding */
+  border-top: 1px solid #ddd; /* Optional: Add a top border for separation */
+  font-size: 0.9rem; /* Adjust font size as needed */
+}
+
+.footer-bottom p {
+  margin: 0; /* Remove default margin from <p> */
+}
+
+.footer-links {
+  display: flex; /* Use Flexbox for horizontal layout */
+  gap: 20px; /* Add spacing between links */
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  color: #88be85;
+}
 
 @media (max-width: 768px) {
-  
-
-    
-  .design_text  {
+  .design_text {
     grid-column: span 3;
-  }  
+  }
 
   .design_img {
     grid-row: 3;
     grid-column: span 3;
   }
 
-
   .beratung_text {
     grid-row: 5;
     grid-column: span 3;
-    }
-
-    .beratung_img {
-      grid-row: 6;
-      grid-column: span 3;
-    }
-
-    .umsetzung_text {
-      grid-row: 8;
-      grid-column: span 3;
-    }
-
-    .umsetzung_img {
-      grid-row: 9;
-      grid-column: span 3;
-    }
-
-    .abonnement_text {
-      grid-row: 11;
-      grid-column: span 3;
-    }
-
-    .abonnement_img {
-      grid-row: 12;
-      grid-column: span 3;
-
-    }
-
-
   }
 
+  .beratung_img {
+    grid-row: 6;
+    grid-column: span 3;
+  }
 
+  .umsetzung_text {
+    grid-row: 8;
+    grid-column: span 3;
+  }
+
+  .umsetzung_img {
+    grid-row: 9;
+    grid-column: span 3;
+  }
+
+  .abonnement_text {
+    grid-row: 11;
+    grid-column: span 3;
+  }
+
+  .abonnement_img {
+    grid-row: 12;
+    grid-column: span 3;
+  }
+}
