@@ -187,7 +187,7 @@ header {
   display: grid;
   box-sizing: border-box;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
+  grid-template-rows: 200px 500px 100px 500px 100px 500px 100px 500px;
 }
 
 .white_space {
@@ -211,14 +211,17 @@ header {
 }
 
 .design_img {
+  height: 500px;
+  width: 700px;
   grid-column: 3;
   grid-row: 2;
   background-color: #dddfd5;
 }
 
-.design_img img {
+.design_img img, .umsetzung_img img, .beratung_img img, .abonnement_img img {
   width: 100%;
   height: 100%;
+  object-fit: cover; /* skaliert Bild,um den Bereich zu füllen */ 
 }
 
 .white_space_arrow_right {
@@ -248,14 +251,11 @@ header {
 }
 
 .beratung_img {
+  height: 500px;
+  width: 700px;
   grid-column: 1;
   grid-row: 4;
   background-color: #dddfd5;
-}
-
-.beratung_img img {
-  width: 100%;
-  height: 100%;
 }
 
 .beratung_text {
@@ -309,26 +309,21 @@ header {
 }
 
 .umsetzung_img {
+  height: 500px;
+  width: 700px;
   grid-column: 3;
   grid-row: 6;
   background-color: #dddfd5;
 }
 
-.umsetzung_img img {
-  width: 100%;
-  height: 100%;
-}
-
 .abonnement_img {
+  height: 500px;
+  width: 700px;
   grid-column: 1;
   grid-row: 8;
   background-color: #dddfd5;
 }
 
-.abonnement_img img {
-  width: 100%;
-  height: 100%;
-}
 
 .abonnement_text {
   display: flex;
@@ -342,11 +337,6 @@ header {
   background-color: #dddfd5;
 }
 
-.underline {
-  display: inline-block;
-  border-bottom: 3px solid #616845; /* Farbe des Strichs */
-  padding-bottom: 5px; /* Abstand zwischen Text und Strich */
-}
 
 /* Footer */
 footer {
@@ -449,6 +439,12 @@ footer {
 }
 
 @media (max-width: 768px) {
+  
+
+  .whole_grid {
+    grid-template-rows: auto
+  }
+  
   .design_text {
     grid-column: span 3;
   }
@@ -456,6 +452,8 @@ footer {
   .design_img {
     grid-row: 3;
     grid-column: span 3;
+    height: 100%;
+    width: 100%
   }
 
   .beratung_text {
@@ -466,6 +464,8 @@ footer {
   .beratung_img {
     grid-row: 6;
     grid-column: span 3;
+    height: 100%;
+    width: 100%
   }
 
   .umsetzung_text {
@@ -476,6 +476,8 @@ footer {
   .umsetzung_img {
     grid-row: 9;
     grid-column: span 3;
+    height: 100%;
+    width: 100%
   }
 
   .abonnement_text {
@@ -486,5 +488,7 @@ footer {
   .abonnement_img {
     grid-row: 12;
     grid-column: span 3;
+    height: 100%;
+    width: 100%
   }
 }
