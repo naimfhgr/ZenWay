@@ -82,7 +82,7 @@ header {
 
 .hero p {
   font-size: 1.2rem;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   color: #666;
 }
 
@@ -93,48 +93,54 @@ header {
   margin: 0 auto; /* Centers horizontally and adds top margin */
 }
 
-/* Green Section */
-.green-section {
+/* Quote Section */
+.quote-section {
   display: flex;
   flex-direction: row; /* Aligns text and image side by side */
   align-items: center;
   justify-content: space-between;
-  background-color: #d8e2cc; /* Greenish background */
+  background-color: #f9f9f9;
   padding: 20px;
   height: 500px;
   box-sizing: border-box; /* Includes padding in dimensions */
 }
 
 /* Left Text Container */
-.green-section .text-content {
+.quote-section .text-content {
   flex: 1; /* Takes up half the section width */
   padding: 20px;
   color: #333; /* Text color */
 }
 
-.green-section .text-content h1 {
+.quote-section .text-content h1 {
   font-size: 2rem; /* Title size */
   margin-bottom: 20px;
 }
 
-.green-section .text-content p {
+.quote-section .text-content p {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
 /* Right Image Container */
-.green-section img {
+.quote-section img {
   flex: 1; /* Takes up half the section width */
   width: 100%; /* Ensures responsiveness */
   height: 500px; /* Maintains aspect ratio */
 }
 
 /* Left Image Container */
-.green-section-left img {
+.quote-section-left img {
   flex: 1; /* Takes up half the section width */
   width: 100%; /* Ensures responsiveness */
   height: 200px; /* Maintains aspect ratio */
+}
+
+/* Green Section */
+.green {
+background-color: #d8e2cc;
+padding: 20px 20px;
 }
 
 /* CTA Button */
@@ -156,8 +162,8 @@ header {
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding: 40px 20px;
-  background-color: #f9f9f9;
+  padding: 60px 10px 20px 20px;
+  background-color: #d8e2cc;
 }
 
 .card {
