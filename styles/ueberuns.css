@@ -97,6 +97,14 @@ header {
   text-align: left;
 }
 
+.hero img {
+  flex-direction: row;
+  width: 80%; /* Ensures responsiveness */
+  height: 600px; /* Maintains aspect ratio */
+}
+
+
+/* Block Style*/
 .block {
   background-color: #616845;
   block-size: 5px;
@@ -107,7 +115,8 @@ header {
 
 
 
-/* Green Section */
+/* Team, Green Cards Section */
+
 .green-section {
   display: flex;
   flex-direction: row; /* Aligns text and image side by side */
@@ -142,20 +151,6 @@ header {
   flex: 1; /* Takes up half the section width */
   width: 100%; /* Ensures responsiveness */
   height: 600px; /* Maintains aspect ratio */
-}
-
-/* CTA Button */
-.cta-button {
-  text-decoration: none;
-  color: #dddfd5;
-  background-color: #616845;
-  padding: 5px 10px;
-}
-
-.cta-button:hover {
-  color: #616845;
-  background-color: #dddfd5;
-  transition: all 0.3s ease; /* Adds a cool & smooth transition :) */
 }
 
 
