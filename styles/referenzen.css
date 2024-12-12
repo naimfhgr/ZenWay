@@ -139,7 +139,14 @@ header {
 .green-section img {
   flex: 1; /* Takes up half the section width */
   width: 100%; /* Ensures responsiveness */
-  height: 600px; /* Maintains aspect ratio */
+  height: 500px; /* Maintains aspect ratio */
+}
+
+/* Left Image Container */
+.green-section-left img {
+  flex: 1; /* Takes up half the section width */
+  width: 100%; /* Ensures responsiveness */
+  height: 300px; /* Maintains aspect ratio */
 }
 
 /* CTA Button */
