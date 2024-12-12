@@ -71,12 +71,12 @@ header {
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 50px 20px;
+  padding: 100px 20px;
   background-color: #ffffff;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
   color: #333;
