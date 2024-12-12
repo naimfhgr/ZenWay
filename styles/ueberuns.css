@@ -71,7 +71,7 @@ header {
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 50px 20px;
   background-color: #ffffff;
 }
 
@@ -85,14 +85,14 @@ header {
 .hero h2 {
   font-size: 1.5rem;
   font-weight: bold;
-  padding: 30px 30px 10px 30px;
+  padding: 30px 150px 10px 150px;
   color: #333;
   text-align: left;
 }
 
 .hero p {
   font-size: 1.2rem;
-  padding: 5px 30px 5px 30px;
+  padding: 5px 150px 5px 150px;
   color: #333;
   text-align: left;
 }
