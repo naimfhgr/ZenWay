@@ -296,3 +296,29 @@ footer {
 .footer-links a:hover {
   color: #88be85;
 }
+
+/* Bilder Commute+ */
+.bilder-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px; /* Begrenzung der Gesamtbreite */
+  margin: 0 auto;
+}
+
+.bilder-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.untere-bilder {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Abstand zwischen den Bildern */
+  width: 100%;
+}
+
+.untere-bilder img {
+  width: 49%; /* Zwei Bilder nebeneinander */
+}
