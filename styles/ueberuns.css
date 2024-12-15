@@ -68,6 +68,8 @@ header {
 
 
 
+
+
 /* Hero Section */
 .hero {
   text-align: center;
@@ -115,6 +117,9 @@ header {
 
 
 
+
+
+
 /* Team, Green Cards Section */
 
 .green-section {
@@ -134,25 +139,6 @@ header {
   font-size: 2rem; /* Title size */
   text-align: center;
   color: #333; 
-
-}
-
-
-
-
-
-.green-section .text-content h1 {
-  font-size: 2rem; /* Title size */
-  margin-bottom: 20px;
-  padding: 20px;
-  color: #333; 
-  text-align: center;
-}
-
-.green-section .text-content p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
 }
 
 /* Right Image Container */
@@ -163,7 +149,7 @@ header {
 }
 
 
-/* Cards Section */
+/* Cards */
 .cards {
   display: flex;
   justify-content: center;
