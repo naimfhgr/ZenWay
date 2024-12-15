@@ -119,25 +119,34 @@ header {
 
 .green-section {
   display: flex;
-  flex-direction: row; /* Aligns text and image side by side */
+  
   align-items: center;
   justify-content: space-between;
   background-color: #d8e2cc; /* Greenish background */
-  padding: 20px;
+  padding: 150px;
   height: 600px; /* Full-screen height */
   box-sizing: border-box; /* Includes padding in dimensions */
 }
 
-/* Left Text Container */
-.green-section .text-content {
-  flex: 1; /* Takes up half the section width */
-  padding: 20px;
-  color: #333; /* Text color */
+.text h1 {
+  background-color: #d8e2cc; /* Greenish background */
+  padding: 150px 10px;
+  font-size: 2rem; /* Title size */
+  text-align: center;
+  color: #333; 
+
 }
+
+
+
+
 
 .green-section .text-content h1 {
   font-size: 2rem; /* Title size */
   margin-bottom: 20px;
+  padding: 20px;
+  color: #333; 
+  text-align: center;
 }
 
 .green-section .text-content p {
@@ -159,7 +168,7 @@ header {
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding: 40px 20px;
+  padding: 60px 10px 20px 20px;
   background-color: #f9f9f9;
 }
 
