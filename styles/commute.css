@@ -8,7 +8,7 @@
 body {
   font-family: "Raleway", sans-serif;
   color: #333;
-  background-color: #f9f9f9;
+  background-color: #f8f8f8;
   line-height: 1.6;
 }
 
@@ -19,7 +19,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #f9f9f9;
+  background-color: #f8f8f8;
   border-bottom: 1px solid #ddd;
   position: sticky;
   z-index: 999;
@@ -79,7 +79,7 @@ header {
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background-color: #ffffff;
+  background-color: #f8f8f8;
 }
 
 .hero h1 {
@@ -113,6 +113,7 @@ header {
   padding: 20px;
   box-sizing: border-box; /* Includes padding in dimensions */
 }
+
 
 /* Left Text Container */
 .green-section .text-content {
@@ -171,7 +172,7 @@ header {
 }
 
 .bottom-image {
-  width: 50%;
+  width: 49%;
   max-width: 400px; /* Jedes untere Bild hat die halbe Breite des oberen Bildes */
   height: auto; /* Seitenverhältnis bleibt erhalten */
 }
@@ -191,6 +192,45 @@ header {
 /* Styling der Listenelemente */
 .meine-liste li {
   margin-bottom: 10px; /* Abstand zwischen den Listenelementen */
+}
+
+/* Bilder Commute+ */
+.bilder-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px; /* Begrenzung der Gesamtbreite */
+  margin: 0 auto;
+}
+
+.bilder-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.untere-bilder {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Abstand zwischen den Bildern */
+  width: 100%;
+}
+
+.untere-bilder img {
+  width: 49%; /* Zwei Bilder nebeneinander */
+}
+
+/*Image Gallery*/
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 40px 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
 }
 
 
@@ -252,6 +292,7 @@ header {
   color: #333; /* Text color */
   box-sizing: border-box; /* Includes padding in dimensions */
 }
+
 
 /* Footer */
 footer {
