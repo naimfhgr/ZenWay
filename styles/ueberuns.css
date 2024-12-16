@@ -66,10 +66,6 @@ header {
   transition: all 0.3s ease; /* Adds a cool & smooth transition :) */
 }
 
-
-
-
-
 /* Hero Section */
 .hero {
   text-align: center;
@@ -109,7 +105,17 @@ header {
   text-align: center;
   padding: 100px 20px;
   background-color: #ffffff;
-  background-image: url(/img/Bild\ Werte\ &\ Vision\ 2.png);flex: 1; width: 100%;height: 600px;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.95)
+    ),
+    url(/img/Bild\ Werte\ &\ Vision\ 2.png);
+  flex: 1;
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
 }
 /* Block Style*/
 .block {
@@ -119,17 +125,10 @@ header {
   margin: 0 auto; /* Centers horizontally and adds top margin */
 }
 
-
-
-
-
-
-
 /* Team, Green Cards Section */
 
 .green-section {
   display: flex;
-  
   align-items: center;
   justify-content: space-between;
   background-color: #d8e2cc; /* Greenish background */
@@ -138,12 +137,12 @@ header {
   box-sizing: border-box; /* Includes padding in dimensions */
 }
 
-.text h1 {
+.text h2 {
   background-color: #d8e2cc; /* Greenish background */
-  padding: 150px 10px;
-  font-size: 2rem; /* Title size */
+  padding: 30px 150px 10px 150px;
+  font-size: 1.5rem; /* Title size */
   text-align: center;
-  color: #333; 
+  color: #333;
 }
 
 /* Right Image Container */
@@ -152,7 +151,6 @@ header {
   width: 100%; /* Ensures responsiveness */
   height: 600px; /* Maintains aspect ratio */
 }
-
 
 /* Cards */
 .cards {
@@ -192,12 +190,6 @@ header {
   padding: 10px 20px;
 }
 
-
-
-
-
-
-
 /* angebot.html */
 
 .whole_grid {
@@ -213,12 +205,6 @@ header {
   grid-column: 1/3;
   grid-row: 1;
 }
-
-
-
-
-
-
 
 /* Footer */
 footer {
