@@ -1,56 +1,57 @@
 /* General Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Raleway", sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+  }
+  
+  /* Header Styling */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .navbar li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar li a {
+    text-decoration: none;
+    color: #0e162c;
+    font-weight: 500;
+  }
+  
+  .navbar li a:hover {
+    color: #616845;
+  }
 
-body {
-  font-family: "Raleway", sans-serif;
-  color: #333;
-  background-color: #f9f9f9;
-  line-height: 1.6;
-}
-
-/* Header Styling */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-  border-bottom: 1px solid #ddd;
-}
-
-/* Navbar Styling */
-.navbar {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.navbar li {
-  display: flex;
-  align-items: center;
-}
-
-.navbar li a {
-  text-decoration: none;
-  color: #0e162c;
-  font-weight: 500;
-}
-
-.navbar li a:hover {
-  color: #616845;
-}
-
-.navbar .cta-button {
-  all: unset; /* Reset all parent and inherited styles */
-  cursor: pointer; /* Change cursor to pointer */
-}
-
-/* Button Styling */
+  .navbar .cta-button {
+    all: unset; /* Reset all parent and inherited styles */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+ /* Button Styling */
 .navbar .cta-button a {
   display: inline-block;
   padding: 8px 15px;
@@ -63,74 +64,77 @@ header {
   background-color: #dddfd5;
   color: #616845;
   transition: all 0.3s ease; /* Adds a cool & smooth transition :) */
-}
-
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-  background-color: #ffffff;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  color: #666;
-}
-
-.block {
-  background-color: #616845;
-  block-size: 5px;
-  width: 5%;
-  margin: 20px auto; /* Centers horizontally and adds top margin */
-}
-/* Green Section */
-.green-section {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row; /* Aligns text and image side by side */
-  text-align: center;
-  justify-content: space-between;
-  background-color: #d8e2cc; /* Greenish background */
-  padding: 20px;
-  box-sizing: border-box; /* Includes padding in dimensions */
-}
-
-/* Left Text Container */
-.green-section .text-content {
-  flex: 1 1 100%; /* nimmt volle Breite ein */
-  padding: 20px;
-  color: #333; /* Text color */
-}
-
-.green-section .text-content h1 {
-  font-size: 2rem; /* Title size */
-  margin-bottom: 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.green-section .text-content p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-/* Äusserer Container, um alles zu zentrieren */
-.outer-container {
-  display: flex;
-  justify-content: center; /* Zentriert horizontal */
-  align-items: center; /* Zentriert vertikal */
-  width: 100%;
-  height: 100%; /* Nimmt die gesamte Höhe des Viewports ein */
-}
+} 
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #ffffff;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+  }
+  
+  .block {
+    background-color: #616845;
+    block-size: 5px;
+    width: 5%;
+    margin: 20px auto; /* Centers horizontally and adds top margin */
+  }
+  /* Green Section */
+  .green-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; /* Aligns text and image side by side */
+    text-align: center;
+    justify-content: space-between;
+<<<<<<< Updated upstream
+    background-color: #dddfd5; /* Greenish background */
+=======
+    background-color:#dddfd5; /* Greenish background */
+>>>>>>> Stashed changes
+    padding: 20px;
+    box-sizing: border-box; /* Includes padding in dimensions */
+  }
+  
+  /* Left Text Container */
+  .green-section .text-content {
+    flex: 1 1 100%; /* nimmt volle Breite ein */
+    padding: 20px;
+    color: #333; /* Text color */
+    }
+  
+  .green-section .text-content h1 {
+    font-size: 2rem; /* Title size */
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .green-section .text-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+      
+  /* Äusserer Container, um alles zu zentrieren */
+  .outer-container {
+    display: flex;
+    justify-content: center; /* Zentriert horizontal */
+    align-items: center; /* Zentriert vertikal */
+    width: 100%;
+    height: 100%; /* Nimmt die gesamte Höhe des Viewports ein */
+  }
 
 /* Innerer Container */
 .container {
@@ -210,7 +214,7 @@ header {
   line-height: 1.6;
   margin-bottom: 20px;
   color: #333;
-}
+  }
 
 /* Right Image Container */
 .quote-section img {
