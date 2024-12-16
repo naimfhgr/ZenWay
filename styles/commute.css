@@ -12,6 +12,7 @@ body {
   line-height: 1.6;
 }
 
+
 /* Header Styling */
 header {
   display: flex;
@@ -25,6 +26,7 @@ header {
   top: -10px;
   box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
 }
+
 
 /* Navbar Styling */
 .navbar {
@@ -55,6 +57,8 @@ header {
   cursor: pointer; /* Change cursor to pointer */
 }
 
+
+
 /* Button Styling */
 .navbar .cta-button a {
   display: inline-block;
@@ -69,6 +73,8 @@ header {
   color: #616845;
   transition: all 0.3s ease; /* Adds a cool & smooth transition :) */
 }
+
+
 /* Hero Section */
 .hero {
   text-align: center;
@@ -95,6 +101,8 @@ header {
   width: 5%;
   margin: 20px auto; /* Centers horizontally and adds top margin */
 }
+
+
 /* Green Section */
 .green-section {
   display: flex;
@@ -188,6 +196,7 @@ header {
   background-color: #d8e2cc;
   padding: 20px 20px;
 }
+
 
 /* Footer */
 footer {
