@@ -181,6 +181,22 @@ header {
   padding: 10px 20px;
 }
 
+/* Quote section */
+.zitat {
+  background-image: #dddfd5;
+  padding: 2em 1em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.zitat img {
+  margin-top: 1em;
+  border-radius: 50%;
+  width: 400px;
+  height: 300px;
+}
+
 /* angebot.html */
 
 .whole_grid {
@@ -322,3 +338,19 @@ footer {
 .untere-bilder img {
   width: 49%; /* Zwei Bilder nebeneinander */
 }
+
+/*Image Gallery*/
+.gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            
+        }
+
+    
