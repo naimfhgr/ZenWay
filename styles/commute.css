@@ -106,7 +106,6 @@ header {
 /* Green Section */
 .green-section {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row; /* Aligns text and image side by side */
   text-align: center;
   justify-content: space-between;
@@ -149,14 +148,15 @@ header {
   display: flex;
   flex-direction: column; /* Bilder übereinander anordnen */
   align-items: center; /* Inhalt horizontal zentrieren */
-  width: auto; /* Container passt sich an die Bilder an */
+  width: 100%; /* Container passt sich an die Bilder an */
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
 /* Oberes Bild */
 .top-image {
-  width: 800px; /* Beispielbreite für das obere Bild */
+  max-width: 800px; /* Beispielbreite für das obere Bild */
+  width: 100%;
   height: auto; /* Seitenverhältnis bleibt erhalten */
   margin-bottom: 10px; /* Abstand zum unteren Bereich */
 }
@@ -165,11 +165,14 @@ header {
 .bottom-images {
   display: flex; /* Ordnet die unteren Bilder nebeneinander an */
   justify-content: center; /* Zentriert den gesamten unteren Bereich */
+  width: 100%;
+  max-width: 800px;
   gap: 10px; /* Abstand zwischen den Bildern */
 }
 
 .bottom-image {
-  width: 400px; /* Jedes untere Bild hat die halbe Breite des oberen Bildes */
+  width: 50%;
+  max-width: 400px; /* Jedes untere Bild hat die halbe Breite des oberen Bildes */
   height: auto; /* Seitenverhältnis bleibt erhalten */
 }
 
