@@ -73,7 +73,12 @@ header {
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 80px 0px;
+}
+
+.hero-impressions {
+  text-align: center;
+  padding: 120px 20px 40px 20px;
 }
 
 .first-hero {
@@ -223,7 +228,7 @@ header {
 
 /* Quote section */
 .zitat {
-  background-image: #dddfd5;
+  background-color: #dddfd5;
   padding: 2em 1em;
   text-align: left;
   display: flex;
@@ -240,21 +245,23 @@ header {
 /* Quote section */
 .quote-container {
   display: flex;
+  background-color: #dddfd5;
   flex-wrap: wrap;
-  height: 400px;
+  height: 300px;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box; /* Includes padding in dimensions */
+  box-sizing: border-box; 
+  margin-top: 150px;
 }
 
 .first-hero-quote {
   text-align: center;
   padding: 100px 20px;
-  background-image: url(/img/quote.png);
+  background-image: url(/img/quote-sign.png);
   background-position: left;
   background-repeat: no-repeat;
-  background-size: 30%;
-  position: relative;
+  background-size: 20%;
+  position:absolute;
   min-height: 200px;
 }
 
@@ -288,22 +295,6 @@ header {
   padding: 20px;
   color: #333; /* Text color */
   box-sizing: border-box; /* Includes padding in dimensions */
-}
-
-/* angebot.html */
-
-.whole_grid {
-  display: grid;
-  box-sizing: border-box;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-}
-
-.white_space {
-  height: 276.744px;
-  width: 1849px;
-  grid-column: 1/3;
-  grid-row: 1;
 }
 
 /* Footer */
