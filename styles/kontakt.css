@@ -20,6 +20,10 @@ header {
   padding: 20px 50px;
   background-color: #f9f9f9;
   border-bottom: 1px solid #ddd;
+  position: sticky;
+  z-index: 999;
+  top: -10px;
+  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Navbar Styling */
