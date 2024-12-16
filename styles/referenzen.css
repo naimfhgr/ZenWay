@@ -18,8 +18,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #ffffff;
+  background-color: #f8f8f8;
   border-bottom: 1px solid #ddd;
+  position: sticky;
+  z-index: 999;
+  top: -10px;
+  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Navbar Styling */
@@ -97,43 +101,57 @@ header {
 .quote-section {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 20px;
   box-sizing: border-box; /* Includes padding in dimensions */
 }
 
-/* Left Text Container */
-.quote-section .text-content {
+/* Quote Section */
+.quote-container {
   display: flex;
-  flex-direction: wrap;
+  flex-wrap: wrap;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box; /* Includes padding in dimensions */
+}
+
+.first-hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-image: url(/img/quote.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  position: relative;
+  min-height: 200px;
+}
+
+.quote-text h2 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
   padding: 20px;
   color: #333; /* Text color */
   box-sizing: border-box; /* Includes padding in dimensions */
 }
 
-/* Right Image Container */
-.quote-section img {
+.quote-text p {
   display: flex;
   flex-wrap: wrap;
-  width: 100%; /* Ensures responsiveness */
-  height: 400px; /* Maintains aspect ratio */
-  box-sizing: border-box; /* Includes padding in dimensions */
-}
-
-/* Left Image Container */
-.quote-section-left img {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%; /* Ensures responsiveness */
-  height: 200px; /* Maintains aspect ratio */
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 20px;
+  color: #333; /* Text color */
   box-sizing: border-box; /* Includes padding in dimensions */
 }
 
 /* Green Section */
 .green {
-background-color: #d8e2cc;
+background-color: #dddfd5;
 padding: 20px 20px;
 }
 
@@ -157,7 +175,7 @@ padding: 20px 20px;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding: 60px 10px 20px 20px;
+  padding: 60px 20px;
   background-color: #dddfd5;
   box-sizing: border-box; /* Includes padding in dimensions */
 }
@@ -167,7 +185,7 @@ padding: 20px 20px;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: #f8f8f8;
   border: 1px solid #ddd;
   overflow: hidden;
   width: 300px;
@@ -179,6 +197,7 @@ padding: 20px 20px;
 .card img {
   width: 100%;
   height: 200px;
+  margin-bottom: 25px;
 }
 
 .card p {

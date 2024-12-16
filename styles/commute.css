@@ -8,9 +8,10 @@
 body {
   font-family: "Raleway", sans-serif;
   color: #333;
-  background-color: #f9f9f9;
+  background-color: #f8f8f8;
   line-height: 1.6;
 }
+
 
 /* Header Styling */
 header {
@@ -18,9 +19,14 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #ffffff;
+  background-color: #f8f8f8;
   border-bottom: 1px solid #ddd;
+  position: sticky;
+  z-index: 999;
+  top: -10px;
+  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
 }
+
 
 /* Navbar Styling */
 .navbar {
@@ -51,6 +57,8 @@ header {
   cursor: pointer; /* Change cursor to pointer */
 }
 
+
+
 /* Button Styling */
 .navbar .cta-button a {
   display: inline-block;
@@ -65,11 +73,26 @@ header {
   color: #616845;
   transition: all 0.3s ease; /* Adds a cool & smooth transition :) */
 }
+
+/* CTA Button */
+.cta-button {
+  text-decoration: none;
+  color: #dddfd5;
+  background-color: #616845;
+  padding: 5px 10px;
+}
+
+.cta-button:hover {
+  color: #616845;
+  background-color: #dddfd5;
+  transition: all 0.3s ease; /* Adds a cool & smooth transition :) */
+}
+
 /* Hero Section */
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background-color: #ffffff;
+  background-color: #f8f8f8;
 }
 
 .hero h1 {
@@ -91,10 +114,11 @@ header {
   width: 5%;
   margin: 20px auto; /* Centers horizontally and adds top margin */
 }
+
+
 /* Green Section */
 .green-section {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row; /* Aligns text and image side by side */
   text-align: center;
   justify-content: space-between;
@@ -102,6 +126,7 @@ header {
   padding: 20px;
   box-sizing: border-box; /* Includes padding in dimensions */
 }
+
 
 /* Left Text Container */
 .green-section .text-content {
@@ -137,14 +162,15 @@ header {
   display: flex;
   flex-direction: column; /* Bilder übereinander anordnen */
   align-items: center; /* Inhalt horizontal zentrieren */
-  width: auto; /* Container passt sich an die Bilder an */
+  width: 100%; /* Container passt sich an die Bilder an */
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
 /* Oberes Bild */
 .top-image {
-  width: 800px; /* Beispielbreite für das obere Bild */
+  max-width: 800px; /* Beispielbreite für das obere Bild */
+  width: 100%;
   height: auto; /* Seitenverhältnis bleibt erhalten */
   margin-bottom: 10px; /* Abstand zum unteren Bereich */
 }
@@ -153,11 +179,14 @@ header {
 .bottom-images {
   display: flex; /* Ordnet die unteren Bilder nebeneinander an */
   justify-content: center; /* Zentriert den gesamten unteren Bereich */
+  width: 100%;
+  max-width: 800px;
   gap: 10px; /* Abstand zwischen den Bildern */
 }
 
 .bottom-image {
-  width: 400px; /* Jedes untere Bild hat die halbe Breite des oberen Bildes */
+  width: 49%;
+  max-width: 400px; /* Jedes untere Bild hat die halbe Breite des oberen Bildes */
   height: auto; /* Seitenverhältnis bleibt erhalten */
 }
 
@@ -178,61 +207,105 @@ header {
   margin-bottom: 10px; /* Abstand zwischen den Listenelementen */
 }
 
-/* Quote Section */
-.quote-section {
+/* Bilder Commute+ */
+.bilder-container {
   display: flex;
-  flex-direction: row; /* Aligns text and image side by side */
+  flex-direction: column;
   align-items: center;
+  max-width: 800px; /* Begrenzung der Gesamtbreite */
+  margin: 0 auto;
+}
+
+.bilder-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.untere-bilder {
+  display: flex;
   justify-content: space-between;
-  background-color: #d8e2cc;
-  padding: 20px;
-  height: 500px;
-  gap: 20px;
-  box-sizing: border-box; /* Includes padding in dimensions */
+  gap: 10px; /* Abstand zwischen den Bildern */
+  width: 100%;
 }
 
-/* Left Text Container */
-.quote-section .text-content {
-  flex: 2 1 300px; /* Takes up half the section width */
-  text-align: center;
-  padding: 20px;
-  color: #333; /* Text color */
+.untere-bilder img {
+  width: 49%; /* Zwei Bilder nebeneinander */
 }
 
-.quote-section .text-content h2 {
-  font-size: 2rem; /* Title size */
-  margin-bottom: 20px;
-  color: #333;
+/*Image Gallery*/
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 40px 20px;
 }
 
-.quote-section .text-content p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  color: #333;
+.gallery img {
+  width: 100%;
+  height: auto;
 }
 
-/* Right Image Container */
-.quote-section img {
-  flex: 1; /* Takes up half the section width */
-  width: 100%; /* Ensures responsiveness */
-  height: 500px; /* Maintains aspect ratio */
-  object-fit: contain;
-}
-
-/* Left Image Container */
-.quote-section-left img {
-  flex: 1; /* Takes up half the section width */
-  width: 100%; /* Ensures responsiveness */
-  height: 200px; /* Maintains aspect ratio */
-  object-fit: contain;
-}
 
 /* Green Section */
 .green {
   background-color: #d8e2cc;
   padding: 20px 20px;
 }
+
+/* Quote Section */
+.quote-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box; /* Includes padding in dimensions */
+}
+
+.first-hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-image: url(/img/quote.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  position: relative;
+  min-height: 200px;
+}
+
+.second-hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-image: url(/img/portrait.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  position: relative;
+  min-height: 200px;
+}
+
+.quote-text h2 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  color: #333; /* Text color */
+  box-sizing: border-box; /* Includes padding in dimensions */
+}
+
+.quote-text p {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 20px;
+  color: #333; /* Text color */
+  box-sizing: border-box; /* Includes padding in dimensions */
+}
+
 
 /* Footer */
 footer {
