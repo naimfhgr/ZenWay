@@ -160,7 +160,7 @@ header {
 }
 
 .text h2 {
-  background-color: #d8e2cc; /* Greenish background */
+  background-color: #dddfd5; /* Greenish background */
   padding: 30px 150px 10px 150px;
   font-size: 1.5rem; /* Title size */
   text-align: center;
@@ -174,31 +174,35 @@ header {
   height: 600px; /* Maintains aspect ratio */
 }
 
-/* Cards */
+/* Cards Section */
 .cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding: 60px 10px 20px 20px;
-  background-color: #f9f9f9;
+  padding: 60px 20px;
+  background-color: #dddfd5;
+  box-sizing: border-box; /* Includes padding in dimensions */
 }
 
 .card {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  flex-wrap: nowrap;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: #f8f8f8;
   border: 1px solid #ddd;
   overflow: hidden;
   width: 300px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Includes padding in dimensions */
 }
 
 .card img {
   width: 100%;
-  height: 200px;
+  height: 400px;
+  margin-bottom: 25px;
 }
 
 .card p {
