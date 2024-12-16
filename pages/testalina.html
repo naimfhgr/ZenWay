@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Visualisierung</title>
+    <style>
+        /* Grundlegendes Styling */
+        body-q {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #ffffff;
+        }
+
+        /* Container für den gesamten Inhalt */
+        .container-q {
+            position: relative;
+            background-color: #f8f9f6; /* Hellgrün für den Hintergrund */
+            padding: 4rem 2rem; /* Abstand für das Zitat */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden; /* Sicherstellen, dass nichts überfließt */
+        }
+
+        /* Quote-Container */
+        .content-q {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        /* Styling für das Zitat */
+        .quote-q {
+            font-size: 1.5rem;
+            color: #222;
+            max-width: 50%;
+            position: relative;
+            z-index: 2; /* Stellt sicher, dass das Zitat über dem Hintergrund liegt */
+        }
+
+        .quote-q p {
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .quote-q .author-q {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Großes Quote-Zeichen im Hintergrund */
+        .quote::before-q {
+            content: "“";
+            font-size: 12rem; /* Große Schrift für das Quote */
+            color: rgba(0, 0, 0, 0.05); /* Transparente Quote-Farbe */
+            position: absolute;
+            top: -2rem;
+            left: 0;
+            z-index: 1; /* Hintergrund */
+        }
+
+        /* Bildbereich */
+        .image-q {
+            max-width: 50%;
+            position: relative;
+            text-align: center;
+            z-index: 3;
+        }
+
+        .image-q img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            border-radius: 5px;
+            position: relative;
+            z-index: 3;
+        }
+
+        /* Grüner Balken */
+        .header-bar-q {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 150px; /* Höhe des Balkens */
+            background-color: #f8f9f6;
+            z-index: 1; /* Hintergrundebene */
+        }
+
+        /* Portrait soll über den grünen Balken hinausgehen */
+        .portrait-q {
+            position: absolute;
+            top: -50px; /* Lässt das Bild über den Balken hinausragen */
+            right: 0;
+            transform: translateY(-50%);
+            z-index: 3; /* Über allen Ebenen */
+        }
+
+        /* Responsive Anpassungen */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .quote, .image {
+                max-width: 100%;
+            }
+
+            .header-bar {
+                height: 100px; /* Kleinere Höhe des Balkens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Grüner Hintergrundbalken -->
+    <div class="header-bar"></div>
+    
+    <!-- Hauptcontainer -->
+    <div class="container">
+        <div class="content">
+            <!-- Zitat-Bereich -->
+            <div class="quote">
+                <p>„ZenWay ist das coolste Unternehmen und Commute+ das geilste, was je auf dieser Welt erfunden wurde. Let’s go!“</p>
+                <p class="author">Monika Müller, CEO SBB</p>
+            </div>
+            <!-- Bild-Bereich -->
+            <div class="image portrait">
+                <img src="https://via.placeholder.com/300x400" alt="Portrait von Monika Müller">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

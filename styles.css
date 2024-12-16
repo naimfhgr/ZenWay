@@ -18,7 +18,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
+  background-color: #f9f9f9;
   border-bottom: 1px solid #ddd;
+  position: sticky;
+  z-index: 999;
+  top: -10px;
+  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Navbar Styling */
@@ -68,7 +73,12 @@ header {
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 80px 0px;
+}
+
+.hero-impressions {
+  text-align: center;
+  padding: 120px 20px 40px 20px;
 }
 
 .first-hero {
@@ -218,7 +228,7 @@ header {
 
 /* Quote section */
 .zitat {
-  background-image: #dddfd5;
+  background-color: #dddfd5;
   padding: 2em 1em;
   text-align: left;
   display: flex;
@@ -232,20 +242,59 @@ header {
   height: 300px;
 }
 
-/* angebot.html */
-
-.whole_grid {
-  display: grid;
-  box-sizing: border-box;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+/* Quote section */
+.quote-container {
+  display: flex;
+  background-color: #dddfd5;
+  flex-wrap: wrap;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box; 
+  margin-top: 150px;
 }
 
-.white_space {
-  height: 276.744px;
-  width: 1849px;
-  grid-column: 1/3;
-  grid-row: 1;
+.first-hero-quote {
+  text-align: center;
+  padding: 100px 20px;
+  background-image: url(/img/quote-sign.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  position:absolute;
+  min-height: 200px;
+}
+
+.second-hero-quote {
+  text-align: center;
+  padding: 100px 20px;
+  background-image: url(/img/portrait.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  position: relative;
+  min-height: 200px;
+}
+
+.quote-text h2 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  color: #333; /* Text color */
+  box-sizing: border-box; /* Includes padding in dimensions */
+}
+
+.quote-text p {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 20px;
+  color: #333; /* Text color */
+  box-sizing: border-box; /* Includes padding in dimensions */
 }
 
 /* Footer */
