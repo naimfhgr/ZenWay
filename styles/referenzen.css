@@ -112,7 +112,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   height: 400px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   box-sizing: border-box; /* Includes padding in dimensions */
 }
@@ -162,7 +162,7 @@ header {
 
 /* Green Section */
 .green {
-background-color: #d8e2cc;
+background-color: #dddfd5;
 padding: 20px 20px;
 }
 
@@ -186,7 +186,7 @@ padding: 20px 20px;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding: 60px 10px 20px 20px;
+  padding: 60px 60px 20px 20px;
   background-color: #dddfd5;
   box-sizing: border-box; /* Includes padding in dimensions */
 }
