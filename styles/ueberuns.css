@@ -89,14 +89,14 @@ header {
   font-weight: bold;
   padding: 30px 150px 10px 150px;
   color: #333;
-  text-align: left;
+  text-align: center;
 }
 
 .hero p {
   font-size: 1.2rem;
   padding: 5px 150px 5px 150px;
   color: #333;
-  text-align: left;
+  text-align: center;
 }
 
 .hero img {
@@ -105,7 +105,12 @@ header {
   height: 600px; /* Maintains aspect ratio */
 }
 
-
+.herofirst {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #ffffff;
+  background-image: url(/img/Bild\ Werte\ &\ Vision\ 2.png);flex: 1; width: 100%;height: 600px;
+}
 /* Block Style*/
 .block {
   background-color: #616845;
