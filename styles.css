@@ -344,7 +344,7 @@ footer {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 10px;
-            padding: 10px;
+            padding: 40px 20px;
         }
 
         .gallery img {
