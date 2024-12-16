@@ -197,6 +197,58 @@ header {
   padding: 20px 20px;
 }
 
+/* Quote Section */
+.quote-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box; /* Includes padding in dimensions */
+}
+
+.first-hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-image: url(/img/quote.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  position: relative;
+  min-height: 200px;
+}
+
+.second-hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-image: url(/img/portrait.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  position: relative;
+  min-height: 200px;
+}
+
+.quote-text h2 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  color: #333; /* Text color */
+  box-sizing: border-box; /* Includes padding in dimensions */
+}
+
+.quote-text p {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 20px;
+  color: #333; /* Text color */
+  box-sizing: border-box; /* Includes padding in dimensions */
+}
 
 /* Footer */
 footer {
