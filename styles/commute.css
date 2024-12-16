@@ -1,217 +1,216 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Raleway", sans-serif;
-    color: #333;
-    background-color: #f9f9f9;
-    line-height: 1.6;
-  }
-  
-  /* Header Styling */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  /* Navbar Styling */
-  .navbar {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .navbar li {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar li a {
-    text-decoration: none;
-    color: #0e162c;
-    font-weight: 500;
-  }
-  
-  .navbar li a:hover {
-    color: #616845;
-  }
-  
-  .navbar .cta-button {
-    all: unset; /* Reset all parent and inherited styles */
-    cursor: pointer; /* Change cursor to pointer */
-  }
-  
-  /* Button Styling */
-  .navbar .cta-button a {
-    display: inline-block;
-    padding: 8px 15px;
-    background-color: #616845; /* Initial background */
-    color: #dddfd5; /* Initial text color */
-    text-decoration: none; /* Remove underlines */
-  }
-  
-  .navbar .cta-button a:hover {
-    background-color: #dddfd5;
-    color: #616845;
-    transition: all 0.3s ease; /* Adds a cool & smooth transition :) */
-  }
-  
-  /* Hero Section */
-  .hero {
-    text-align: center;
-    padding: 100px 20px;
-    background-color: #ffffff;
-  }
-  
-  .hero h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: #666;
-  }
-  
-  .block {
-    background-color: #616845;
-    block-size: 5px;
-    width: 5%;
-    margin: 20px auto; /* Centers horizontally and adds top margin */
-  }
-  /* Green Section */
-  .green-section {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row; /* Aligns text and image side by side */
-    text-align: center;
-    justify-content: space-between;
-    background-color: #d8e2cc; /* Greenish background */
-    padding: 20px;
-    box-sizing: border-box; /* Includes padding in dimensions */
-  }
-  
-  /* Left Text Container */
-  .green-section .text-content {
-    flex: 1 1 100%; /* nimmt volle Breite ein */
-    padding: 20px;
-    color: #333; /* Text color */
-    }
-  
-  .green-section .text-content h1 {
-    font-size: 2rem; /* Title size */
-    margin-bottom: 20px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .green-section .text-content p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
-      
-  /* Äusserer Container, um alles zu zentrieren */
-  .outer-container {
-    display: flex;
-    justify-content: center; /* Zentriert horizontal */
-    align-items: center; /* Zentriert vertikal */
-    width: 100%;
-    height: 100%; /* Nimmt die gesamte Höhe des Viewports ein */
-  }
-
-  /* Innerer Container */
-  .container {
-    display: flex;
-    flex-direction: column; /* Bilder übereinander anordnen */
-    align-items: center; /* Inhalt horizontal zentrieren */
-    width: auto; /* Container passt sich an die Bilder an */
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
-  /* Oberes Bild */
-  .top-image {
-    width: 800px; /* Beispielbreite für das obere Bild */
-    height: auto; /* Seitenverhältnis bleibt erhalten */
-    margin-bottom: 10px; /* Abstand zum unteren Bereich */
-  }
-
-  /* Untere Bilder */
-  .bottom-images {
-    display: flex; /* Ordnet die unteren Bilder nebeneinander an */
-    justify-content: center; /* Zentriert den gesamten unteren Bereich */
-    gap: 10px; /* Abstand zwischen den Bildern */
-  }
-
-  .bottom-image {
-    width: 400px; /* Jedes untere Bild hat die halbe Breite des oberen Bildes */
-    height: auto; /* Seitenverhältnis bleibt erhalten */
-  }
-
-  /* Grundlegendes Styling für die Liste */
-  .meine-liste {
-    list-style-type: disc; /* Punkt als Auflistungszeichen */
-    list-style-position: inside;
-    padding-left: 0px; /* Abstand vom linken Rand */
-    font-family: "Raleway", sans-serif; /* Schriftart */
-    font-size: 1.2rem; /* Schriftgröße */
-    line-height: 1.5; /* Zeilenhöhe */
-    color: #333;
-    align-items: center;
-  }
-
-  /* Styling der Listenelemente */
-  .meine-liste li {
-    margin-bottom: 10px; /* Abstand zwischen den Listenelementen */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-  /* Quote Section */
-  .quote-section {
-    display: flex;
-    flex-direction: row; /* Aligns text and image side by side */
-    align-items: center;
-    justify-content: space-between;
-    background-color: #d8e2cc;
-    padding: 20px;
-    height: 500px;
-    gap: 20px;
-    box-sizing: border-box; /* Includes padding in dimensions */
-  }
+body {
+  font-family: "Raleway", sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
 
-  /* Left Text Container */
-  .quote-section .text-content {
-    flex: 2 1 300px; /* Takes up half the section width */
-    text-align: center;
-    padding: 20px;
-    color: #333; /* Text color */
-  }
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
 
-  .quote-section .text-content h2 {
-    font-size: 2rem; /* Title size */
-    margin-bottom: 20px;
-    color: #333;
-  }
+/* Navbar Styling */
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-  .quote-section .text-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: #333;
-  }
+.navbar li {
+  display: flex;
+  align-items: center;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #0e162c;
+  font-weight: 500;
+}
+
+.navbar li a:hover {
+  color: #616845;
+}
+
+.navbar .cta-button {
+  all: unset; /* Reset all parent and inherited styles */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Button Styling */
+.navbar .cta-button a {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #616845; /* Initial background */
+  color: #dddfd5; /* Initial text color */
+  text-decoration: none; /* Remove underlines */
+}
+
+.navbar .cta-button a:hover {
+  background-color: #dddfd5;
+  color: #616845;
+  transition: all 0.3s ease; /* Adds a cool & smooth transition :) */
+}
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #ffffff;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.block {
+  background-color: #616845;
+  block-size: 5px;
+  width: 5%;
+  margin: 20px auto; /* Centers horizontally and adds top margin */
+}
+/* Green Section */
+.green-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; /* Aligns text and image side by side */
+  text-align: center;
+  justify-content: space-between;
+  background-color: #dddfd5; /* Greenish background */
+  padding: 20px;
+  box-sizing: border-box; /* Includes padding in dimensions */
+}
+
+/* Left Text Container */
+.green-section .text-content {
+  flex: 1 1 100%; /* nimmt volle Breite ein */
+  padding: 20px;
+  color: #333; /* Text color */
+}
+
+.green-section .text-content h1 {
+  font-size: 2rem; /* Title size */
+  margin-bottom: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.green-section .text-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Äusserer Container, um alles zu zentrieren */
+.outer-container {
+  display: flex;
+  justify-content: center; /* Zentriert horizontal */
+  align-items: center; /* Zentriert vertikal */
+  width: 100%;
+  height: 100%; /* Nimmt die gesamte Höhe des Viewports ein */
+}
+
+/* Innerer Container */
+.container {
+  display: flex;
+  flex-direction: column; /* Bilder übereinander anordnen */
+  align-items: center; /* Inhalt horizontal zentrieren */
+  width: auto; /* Container passt sich an die Bilder an */
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Oberes Bild */
+.top-image {
+  width: 800px; /* Beispielbreite für das obere Bild */
+  height: auto; /* Seitenverhältnis bleibt erhalten */
+  margin-bottom: 10px; /* Abstand zum unteren Bereich */
+}
+
+/* Untere Bilder */
+.bottom-images {
+  display: flex; /* Ordnet die unteren Bilder nebeneinander an */
+  justify-content: center; /* Zentriert den gesamten unteren Bereich */
+  gap: 10px; /* Abstand zwischen den Bildern */
+}
+
+.bottom-image {
+  width: 400px; /* Jedes untere Bild hat die halbe Breite des oberen Bildes */
+  height: auto; /* Seitenverhältnis bleibt erhalten */
+}
+
+/* Grundlegendes Styling für die Liste */
+.meine-liste {
+  list-style-type: disc; /* Punkt als Auflistungszeichen */
+  list-style-position: inside;
+  padding-left: 0px; /* Abstand vom linken Rand */
+  font-family: "Raleway", sans-serif; /* Schriftart */
+  font-size: 1.2rem; /* Schriftgröße */
+  line-height: 1.5; /* Zeilenhöhe */
+  color: #333;
+  align-items: center;
+}
+
+/* Styling der Listenelemente */
+.meine-liste li {
+  margin-bottom: 10px; /* Abstand zwischen den Listenelementen */
+}
+
+/* Quote Section */
+.quote-section {
+  display: flex;
+  flex-direction: row; /* Aligns text and image side by side */
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d8e2cc;
+  padding: 20px;
+  height: 500px;
+  gap: 20px;
+  box-sizing: border-box; /* Includes padding in dimensions */
+}
+
+/* Left Text Container */
+.quote-section .text-content {
+  flex: 2 1 300px; /* Takes up half the section width */
+  text-align: center;
+  padding: 20px;
+  color: #333; /* Text color */
+}
+
+.quote-section .text-content h2 {
+  font-size: 2rem; /* Title size */
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.quote-section .text-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #333;
+}
 
 /* Right Image Container */
 .quote-section img {
@@ -231,106 +230,106 @@
 
 /* Green Section */
 .green {
-background-color: #d8e2cc;
-padding: 20px 20px;
+  background-color: #d8e2cc;
+  padding: 20px 20px;
 }
 
-  /* Footer */
-  footer {
-    font-size: 1rem;
-    padding: 40px 20px;
-    border-top: 1px solid #ddd;
-  }
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 20px;
-    max-width: 1500px;
-    margin: 50px auto;
-    padding: 0 20px;
-  }
-  
-  .footer-logo {
-    flex-grow: 2;
-    text-align: left;
-  }
-  
-  .footer-nav,
-  .footer-contact {
-    flex: 1;
-    text-align: left;
-    min-width: 200px;
-  }
-  
-  .footer-logo img {
-    width: 150px;
-  }
-  
-  .footer-nav h3,
-  .footer-contact h3 {
-    font-size: 1rem;
-    margin-bottom: 15px;
-  }
-  
-  .footer-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-nav ul li {
-    margin-bottom: 10px;
-  }
-  
-  .footer-nav ul li a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .footer-nav ul li a:hover {
-    color: #88be85;
-  }
-  
-  .footer-contact p {
-    margin-bottom: 10px;
-  }
-  
-  .footer-contact a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .footer-contact a:hover {
-    color: #88be85;
-  }
-  
-  .footer-bottom {
-    display: flex; /* Use Flexbox for layout */
-    justify-content: space-between; /* Push <p> to the left and nav to the right */
-    align-items: center; /* Align both vertically */
-    padding: 10px 20px; /* Add some padding */
-    border-top: 1px solid #ddd; /* Optional: Add a top border for separation */
-    font-size: 0.9rem; /* Adjust font size as needed */
-  }
-  
-  .footer-bottom p {
-    margin: 0; /* Remove default margin from <p> */
-  }
-  
-  .footer-links {
-    display: flex; /* Use Flexbox for horizontal layout */
-    gap: 20px; /* Add spacing between links */
-  }
-  
-  .footer-links a {
-    text-decoration: none;
-    color: #333;
-    margin: 0 10px;
-  }
-  
-  .footer-links a:hover {
-    color: #88be85;
-  }
+/* Footer */
+footer {
+  font-size: 1rem;
+  padding: 40px 20px;
+  border-top: 1px solid #ddd;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1500px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.footer-logo {
+  flex-grow: 2;
+  text-align: left;
+}
+
+.footer-nav,
+.footer-contact {
+  flex: 1;
+  text-align: left;
+  min-width: 200px;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+.footer-nav h3,
+.footer-contact h3 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav ul li {
+  margin-bottom: 10px;
+}
+
+.footer-nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-nav ul li a:hover {
+  color: #88be85;
+}
+
+.footer-contact p {
+  margin-bottom: 10px;
+}
+
+.footer-contact a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #88be85;
+}
+
+.footer-bottom {
+  display: flex; /* Use Flexbox for layout */
+  justify-content: space-between; /* Push <p> to the left and nav to the right */
+  align-items: center; /* Align both vertically */
+  padding: 10px 20px; /* Add some padding */
+  border-top: 1px solid #ddd; /* Optional: Add a top border for separation */
+  font-size: 0.9rem; /* Adjust font size as needed */
+}
+
+.footer-bottom p {
+  margin: 0; /* Remove default margin from <p> */
+}
+
+.footer-links {
+  display: flex; /* Use Flexbox for horizontal layout */
+  gap: 20px; /* Add spacing between links */
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  color: #88be85;
+}
