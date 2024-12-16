@@ -74,6 +74,19 @@ header {
   transition: all 0.3s ease; /* Adds a cool & smooth transition :) */
 }
 
+/* CTA Button */
+.cta-button {
+  text-decoration: none;
+  color: #dddfd5;
+  background-color: #616845;
+  padding: 5px 10px;
+}
+
+.cta-button:hover {
+  color: #616845;
+  background-color: #dddfd5;
+  transition: all 0.3s ease; /* Adds a cool & smooth transition :) */
+}
 
 /* Hero Section */
 .hero {
