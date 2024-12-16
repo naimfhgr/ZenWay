@@ -208,6 +208,7 @@ padding: 20px 20px;
 .card img {
   width: 100%;
   height: 200px;
+  margin-bottom: 25px;
 }
 
 .card p {
