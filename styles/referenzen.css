@@ -110,9 +110,8 @@ header {
 /* Quote Section */
 .quote-container {
   display: flex;
-  flex-wrap: wrap;
   height: 400px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   box-sizing: border-box; /* Includes padding in dimensions */
 }
@@ -162,7 +161,7 @@ header {
 
 /* Green Section */
 .green {
-background-color: #d8e2cc;
+background-color: #dddfd5;
 padding: 20px 20px;
 }
 
