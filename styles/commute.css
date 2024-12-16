@@ -45,27 +45,26 @@
   .navbar li a:hover {
     color: #616845;
   }
-  
+
   .navbar .cta-button {
     all: unset; /* Reset all parent and inherited styles */
     cursor: pointer; /* Change cursor to pointer */
   }
   
-  /* Button Styling */
-  .navbar .cta-button a {
-    display: inline-block;
-    padding: 8px 15px;
-    background-color: #616845; /* Initial background */
-    color: #dddfd5; /* Initial text color */
-    text-decoration: none; /* Remove underlines */
-  }
-  
-  .navbar .cta-button a:hover {
-    background-color: #dddfd5;
-    color: #616845;
-    transition: all 0.3s ease; /* Adds a cool & smooth transition :) */
-  }
-  
+ /* Button Styling */
+.navbar .cta-button a {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #616845; /* Initial background */
+  color: #dddfd5; /* Initial text color */
+  text-decoration: none; /* Remove underlines */
+}
+
+.navbar .cta-button a:hover {
+  background-color: #dddfd5;
+  color: #616845;
+  transition: all 0.3s ease; /* Adds a cool & smooth transition :) */
+} 
   /* Hero Section */
   .hero {
     text-align: center;
@@ -99,7 +98,11 @@
     flex-direction: row; /* Aligns text and image side by side */
     text-align: center;
     justify-content: space-between;
-    background-color: #d8e2cc; /* Greenish background */
+<<<<<<< Updated upstream
+    background-color: #dddfd5; /* Greenish background */
+=======
+    background-color:#dddfd5; /* Greenish background */
+>>>>>>> Stashed changes
     padding: 20px;
     box-sizing: border-box; /* Includes padding in dimensions */
   }
@@ -206,11 +209,11 @@
     color: #333;
   }
 
-  .quote-section .text-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: #333;
+.quote-section .text-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #333;
   }
 
 /* Right Image Container */
