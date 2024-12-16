@@ -18,8 +18,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   border-bottom: 1px solid #ddd;
+  position: sticky;
+  z-index: 999;
+  top: -10px;
+  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Navbar Styling */
@@ -63,6 +67,20 @@ header {
 .navbar .cta-button a:hover {
   background-color: #dddfd5;
   color: #616845;
+  transition: all 0.3s ease; /* Adds a cool & smooth transition :) */
+}
+
+/* CTA Button */
+.cta-button {
+  text-decoration: none;
+  color: #dddfd5;
+  background-color: #616845;
+  padding: 5px 10px;
+}
+
+.cta-button:hover {
+  color: #616845;
+  background-color: #dddfd5;
   transition: all 0.3s ease; /* Adds a cool & smooth transition :) */
 }
 
@@ -125,6 +143,10 @@ header {
   margin: 0 auto; /* Centers horizontally and adds top margin */
 }
 
+.überblock {
+  background-color: #d8e2cc;
+}
+
 /* Team, Green Cards Section */
 
 .green-section {
@@ -164,6 +186,7 @@ header {
 .card {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: space-between;
   background-color: #fff;
   border: 1px solid #ddd;
