@@ -89,14 +89,14 @@ header {
   font-weight: bold;
   padding: 30px 150px 10px 150px;
   color: #333;
-  text-align: left;
+  text-align: center;
 }
 
 .hero p {
   font-size: 1.2rem;
   padding: 5px 150px 5px 150px;
   color: #333;
-  text-align: left;
+  text-align: center;
 }
 
 .hero img {
