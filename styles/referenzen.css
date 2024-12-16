@@ -96,7 +96,7 @@ header {
 /* Quote Section */
 .quote-section {
   display: flex;
-  flex-direction: row; /* Aligns text and image side by side */
+  flex-direction: wrap;
   align-items: center;
   justify-content: space-between;
   background-color: #f9f9f9;
@@ -108,8 +108,10 @@ header {
 /* Left Text Container */
 .quote-section .text-content {
   flex: 1; /* Takes up half the section width */
+  flex-direction: wrap;
   padding: 20px;
   color: #333; /* Text color */
+  box-sizing: border-box; /* Includes padding in dimensions */
 }
 
 .quote-section .text-content h1 {
@@ -135,6 +137,8 @@ header {
   flex: 1; /* Takes up half the section width */
   width: 100%; /* Ensures responsiveness */
   height: 200px; /* Maintains aspect ratio */
+  flex-wrap: wrap;
+  box-sizing: border-box; /* Includes padding in dimensions */
 }
 
 /* Green Section */
@@ -160,14 +164,17 @@ padding: 20px 20px;
 /* Cards Section */
 .cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   padding: 60px 10px 20px 20px;
-  background-color: #d8e2cc;
+  background-color: #dddfd5;
+  box-sizing: border-box; /* Includes padding in dimensions */
 }
 
 .card {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
   background-color: #fff;
@@ -176,6 +183,7 @@ padding: 20px 20px;
   width: 300px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Includes padding in dimensions */
 }
 
 .card img {
@@ -193,22 +201,6 @@ padding: 20px 20px;
   display: inline-block;
   margin: 10px auto 20px;
   padding: 10px 20px;
-}
-
-/* angebot.html */
-
-.whole_grid {
-  display: grid;
-  box-sizing: border-box;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-}
-
-.white_space {
-  height: 276.744px;
-  width: 1849px;
-  grid-column: 1/3;
-  grid-row: 1;
 }
 
 /* Footer */
