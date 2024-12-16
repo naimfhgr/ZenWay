@@ -111,14 +111,32 @@ header {
 .quote-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  width: 80%;
-  max-width: 1200px;
+  height: 400px;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box; /* Includes padding in dimensions */
+}
+
+.first-hero {
   text-align: center;
-  flex-direction: row; /* Bilder und Text nebeneinander */
-  gap: 20px;
+  padding: 100px 20px;
+  background-image: url(/img/quote.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  position: relative;
+  min-height: 200px;
+}
+
+.second-hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-image: url(/img/portrait.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  position: relative;
+  min-height: 200px;
 }
 
 .quote-text h2 {
@@ -140,17 +158,6 @@ header {
   padding: 20px;
   color: #333; /* Text color */
   box-sizing: border-box; /* Includes padding in dimensions */
-}
-
-.first-hero {
-  text-align: center;
-  padding: 100px 20px;
-  background-image: url(/img/quote.png);
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: 30%;
-  position: relative;
-  min-height: 200px;
 }
 
 /* Green Section */
