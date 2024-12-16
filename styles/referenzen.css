@@ -18,7 +18,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #f9f9f9;
+  background-color: #f8f8f8;
   border-bottom: 1px solid #ddd;
   position: sticky;
   z-index: 999;
@@ -186,7 +186,7 @@ padding: 20px 20px;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding: 20px;
+  padding: 60px 20px;
   background-color: #dddfd5;
   box-sizing: border-box; /* Includes padding in dimensions */
 }
@@ -196,7 +196,7 @@ padding: 20px 20px;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: #f8f8f8;
   border: 1px solid #ddd;
   overflow: hidden;
   width: 300px;
