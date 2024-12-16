@@ -80,25 +80,26 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  min-height: 500px;
 }
 .first-hero h1 {
   font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 20px;
-  color: #333;
+  margin-top: 80px;
+  color: #ffffff;
 }
 
 .first-hero p {
   font-size: 1.2rem;
   margin-bottom: 30px;
-  color: #666;
+  color: #ffffff;
 }
 
-.first-hero h1 {
+.hero h1 {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #333;
+  color: #666;
 }
 
 .hero p {
