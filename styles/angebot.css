@@ -224,42 +224,11 @@ header {
   object-fit: cover; /* skaliert Bild,um den Bereich zu füllen */ 
 }
 
-.white_space_arrow_right, .white_space_arrow_left {
-  display: flex; /* Flexbox aktivieren */
-  align-items: center; /* Vertikale Zentrierung */
-  padding: 50px;
-}
-
-.white_space_arrow_right {
-  grid-column: span 1;
-  justify-content: center; /* Horizontale Zentrierung */
-}
-
-.white_space_arrow_left {
+.white_space_1{
+  margin: 30px;
+  padding: 30px;
+  grid-row: 3;
   grid-column: span 3;
-  justify-content: right; /* Horizontale Zentrierung */
-}
-
-.arrow_right, .arrow_left {
-  display: flex; /* Flexbox für die Pfeile */
-  align-items: center; /* Vertikale Zentrierung */
-  justify-content: center; /* Zentriert Pfeilinhalt horizontal */
-  flex-direction: row;
-}
-
- 
-.arrow_right_body, .arrow_left_body {
-  width: 450px; /* Länge des Pfeilkörpers */
-  height: 4px; /* Dicke der Linie */
-  background-color: #616845;
-}
-
-.arrow_right_head {
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 20px solid #616845;
 }
 
 .beratung_img {
@@ -282,13 +251,11 @@ header {
   background-color: #dddfd5;
 }
 
-
-.arrow_left_head {
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right: 20px solid #616845;
+.white_space_2{
+  margin: 30px;
+  padding: 30px;
+  grid-row: 5;
+  grid-column: span 3;
 }
 
 .umsetzung_text {
@@ -309,6 +276,13 @@ header {
   grid-column: 3;
   grid-row: 6;
   background-color: #dddfd5;
+}
+
+.white_space_3{
+  margin: 30px;
+  padding: 30px;
+  grid-row: 7;
+  grid-column: span 3;
 }
 
 .abonnement_img {
@@ -433,52 +407,51 @@ footer {
   color: #88be85;
 }
 
+
 @media (max-width: 768px) {
 
-  .design_text {
-    grid-column: span 3;
+  .whole_grid {
+    grid-template-columns: 1fr;
   }
 
   .design_img {
     grid-row: 3;
-    grid-column: span 3;
-    height: 100%;
-    width: 100%
+  }
+
+  .white_space_1 {
+    grid-row: 4;
   }
 
   .beratung_text {
     grid-row: 5;
-    grid-column: span 3;
   }
 
   .beratung_img {
     grid-row: 6;
-    grid-column: span 3;
-    height: 100%;
-    width: 100%
+  }
+
+  .white_space_2 {
+    grid-row: 7;
   }
 
   .umsetzung_text {
     grid-row: 8;
-    grid-column: span 3;
   }
 
   .umsetzung_img {
     grid-row: 9;
-    grid-column: span 3;
-    height: 100%;
-    width: 100%
+  }
+
+  .white_space_3 {
+    grid-row: 10;
   }
 
   .abonnement_text {
     grid-row: 11;
-    grid-column: span 3;
   }
 
   .abonnement_img {
     grid-row: 12;
-    grid-column: span 3;
-    height: 100%;
-    width: 100%
   }
+  
 }
