@@ -128,17 +128,6 @@ header {
   min-height: 200px;
 }
 
-.second-hero {
-  text-align: center;
-  padding: 100px 20px;
-  background-image: url(/img/portrait.png);
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: 30%;
-  position: relative;
-  min-height: 200px;
-}
-
 .quote-text h2 {
   display: flex;
   flex-wrap: wrap;
