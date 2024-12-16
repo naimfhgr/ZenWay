@@ -81,8 +81,20 @@ header {
   background-size: cover;
   position: relative;
 }
+.first-hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
 
-.hero h1 {
+.first-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.first-hero h1 {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
