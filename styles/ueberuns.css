@@ -8,7 +8,7 @@
 body {
   font-family: "Raleway", sans-serif;
   color: #333;
-  background-color: #f9f9f9;
+  background-color: #f8f8f8;
   line-height: 1.6;
 }
 
@@ -151,6 +151,7 @@ header {
 
 .green-section {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   background-color: #d8e2cc; /* Greenish background */
@@ -177,16 +178,18 @@ header {
 /* Cards */
 .cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   padding: 60px 10px 20px 20px;
   background-color: #f9f9f9;
+  box-sizing: border-box;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -194,11 +197,13 @@ header {
   width: 300px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
 .card img {
   width: 100%;
   height: 200px;
+  margin-bottom: 25px;
 }
 
 .card p {
