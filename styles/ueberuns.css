@@ -111,6 +111,7 @@ header {
   padding: 5px 150px 5px 150px;
   color: #333;
   text-align: center;
+  box-sizing: border-box; /* Includes padding in dimensions */
 }
 
 .hero img {
