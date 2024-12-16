@@ -144,7 +144,7 @@ header {
 }
 
 .überblock {
-  background-color: #d8e2cc;
+  background-color: #dddfd5;
 }
 
 /* Team, Green Cards Section */
@@ -202,6 +202,7 @@ header {
 .card img {
   width: 100%;
   height: 400px;
+  margin-bottom: 25px;
 }
 
 .card p {
