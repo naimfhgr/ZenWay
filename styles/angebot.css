@@ -186,7 +186,7 @@ header {
 .whole_grid {
   display: grid;
   box-sizing: border-box;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); 
   grid-template-rows: auto;
 }
 
@@ -197,7 +197,6 @@ header {
   grid-row: 1;
   grid-column: span 3;
 }
-
 .design_text {
   display: flex;
   flex-direction: column;
@@ -211,13 +210,10 @@ header {
 }
 
 .design_img {
-  height: 500px;
-  width: 700px;
   grid-column: 3;
   grid-row: 2;
   background-color: #dddfd5;
 }
-
 .design_img img, .umsetzung_img img, .beratung_img img, .abonnement_img img {
   width: 100%;
   height: 100%;
@@ -232,8 +228,6 @@ header {
 }
 
 .beratung_img {
-  height: 500px;
-  width: 700px;
   grid-column: 1;
   grid-row: 4;
   background-color: #dddfd5;
@@ -271,8 +265,6 @@ header {
 }
 
 .umsetzung_img {
-  height: 500px;
-  width: 700px;
   grid-column: 3;
   grid-row: 6;
   background-color: #dddfd5;
@@ -286,13 +278,10 @@ header {
 }
 
 .abonnement_img {
-  height: 500px;
-  width: 700px;
   grid-column: 1;
   grid-row: 8;
   background-color: #dddfd5;
 }
-
 
 .abonnement_text {
   display: flex;
@@ -305,6 +294,8 @@ header {
   grid-row: 8;
   background-color: #dddfd5;
 }
+
+
 
 
 /* Footer */
@@ -407,11 +398,83 @@ footer {
   color: #88be85;
 }
 
+@media (max-width: 1024px) {
+  .whole_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .design_text {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .design_img {
+    grid-row: 3;
+    grid-column: 2;
+  }
+
+  .white_space_1 {
+    grid-row: 4;
+    grid-column: span 2;
+  }
+
+  .beratung_text {
+    grid-row: 5;
+    grid-column: 2;
+  }
+
+  .beratung_img {
+    grid-row: 5;
+    grid-column: 1;
+  }
+
+  .white_space_2 {
+    grid-row: 6;
+    grid-column: span 2;
+  }
+
+  .umsetzung_text {
+    grid-row: 7;
+    grid-column: 1;
+  }
+
+  .umsetzung_img {
+    grid-row: 7;
+    grid-column: 2;
+  }
+
+  .white_space_3 {
+    grid-row: 8;
+    grid-column: span 2;
+  }
+
+  .abonnement_text {
+    grid-row: 10;
+    grid-column: 2;
+  }
+
+  .abonnement_img {
+    grid-row: 10;
+    grid-column: 1;
+  }
+
+
+}
+
 
 @media (max-width: 768px) {
 
   .whole_grid {
-    grid-template-columns: 1fr;
+    grid-template-columns:1fr;
+  }
+
+  .whole_grid > * {
+    grid-column: 1;
+  }
+
+
+  .design_text {
+    grid-row: 2;
   }
 
   .design_img {
