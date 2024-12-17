@@ -18,7 +18,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #f9f9f9;
+  background-color: #f8f8f8;
   border-bottom: 1px solid #ddd;
   position: sticky;
   z-index: 999;
@@ -234,6 +234,20 @@ header {
   flex: 1; /* Takes up half the section width */
   width: 100%; /* Ensures responsiveness */
   height: 600px; /* Maintains aspect ratio */
+}
+
+/* CTA Button */
+.cta-button {
+  text-decoration: none;
+  color: #dddfd5;
+  background-color: #616845;
+  padding: 10px 20px;
+}
+
+.cta-button:hover {
+  color: #616845;
+  background-color: #dddfd5;
+  transition: all 0.3s ease; /* Adds a cool & smooth transition :) */
 }
 
 /* Cards Section */
