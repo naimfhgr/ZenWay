@@ -18,8 +18,16 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   border-bottom: 1px solid #ddd;
+  position: sticky;
+  z-index: 999;
+  top: -10px;
+  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header-logo img {
+  height: 45px;
 }
 
 /* Navbar Styling */
@@ -64,6 +72,77 @@ header {
   background-color: #dddfd5;
   color: #616845;
   transition: all 0.3s ease; /* Adds a cool & smooth transition :) */
+}
+
+/* Hamburger Menu - Hidden by Default */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background-color: #0e162c;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Checkbox Hidden */
+.nav-toggle {
+  display: none;
+}
+
+/* Mobile Navigation */
+@media screen and (max-width: 750px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #dddfd5;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: visible; /* Ensure visibility */
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+    z-index: 1000;
+    gap: 30px;
+  }
+
+  .navbar a {
+    font-size: 2rem;
+  }
+
+  /* Show Navigation When Checkbox is Checked */
+  .nav-toggle:checked ~ .navbar {
+    transform: translateX(0);
+  }
+
+  /* Hamburger Animation */
+  .nav-toggle:checked + .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translateY(11px);
+    background-color: #0e162c;
+  }
+
+  .nav-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle:checked + .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-12px);
+    background-color: #0e162c;
+  }
 }
 
 /* Hero Section */
@@ -186,14 +265,20 @@ header {
 .whole_grid {
   display: grid;
   box-sizing: border-box;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
+}
+
+.whole_grid h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 .white_space {
   text-align: center;
-  margin: 30px;
-  padding: 30px;
+  padding: 100px 0px;
   grid-row: 1;
   grid-column: span 3;
 }
@@ -214,13 +299,16 @@ header {
   grid-row: 2;
   background-color: #dddfd5;
 }
-.design_img img, .umsetzung_img img, .beratung_img img, .abonnement_img img {
+.design_img img,
+.umsetzung_img img,
+.beratung_img img,
+.abonnement_img img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* skaliert Bild,um den Bereich zu füllen */ 
+  object-fit: cover; /* skaliert Bild,um den Bereich zu füllen */
 }
 
-.white_space_1{
+.white_space_1 {
   margin: 30px;
   padding: 30px;
   grid-row: 3;
@@ -245,7 +333,7 @@ header {
   background-color: #dddfd5;
 }
 
-.white_space_2{
+.white_space_2 {
   margin: 30px;
   padding: 30px;
   grid-row: 5;
@@ -270,7 +358,7 @@ header {
   background-color: #dddfd5;
 }
 
-.white_space_3{
+.white_space_3 {
   margin: 30px;
   padding: 30px;
   grid-row: 7;
@@ -294,9 +382,6 @@ header {
   grid-row: 8;
   background-color: #dddfd5;
 }
-
-
-
 
 /* Footer */
 footer {
@@ -457,21 +542,16 @@ footer {
     grid-row: 10;
     grid-column: 1;
   }
-
-
 }
 
-
 @media (max-width: 768px) {
-
   .whole_grid {
-    grid-template-columns:1fr;
+    grid-template-columns: 1fr;
   }
 
   .whole_grid > * {
     grid-column: 1;
   }
-
 
   .design_text {
     grid-row: 2;
@@ -516,5 +596,4 @@ footer {
   .abonnement_img {
     grid-row: 12;
   }
-  
 }
