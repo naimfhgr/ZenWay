@@ -171,6 +171,20 @@ header {
   margin: 20px auto; /* Centers horizontally and adds top margin */
 }
 
+/* CTA Button */
+.cta-button {
+  text-decoration: none;
+  color: #dddfd5;
+  background-color: #616845;
+  padding: 10px 20px;
+}
+
+.cta-button:hover {
+  color: #616845;
+  background-color: #dddfd5;
+  transition: all 0.3s ease; /* Adds a cool & smooth transition :) */
+}
+
 /* Green Section */
 .green-section {
   display: flex;
