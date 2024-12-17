@@ -43,7 +43,6 @@ header {
 .navbar li a {
   text-decoration: none;
   color: #0e162c;
-  font-weight: 500;
 }
 
 .navbar li a:hover {
