@@ -37,7 +37,7 @@
       <!-- Form Section -->
       <section class="contact-form">
         <h2>Kontaktieren Sie uns!</h2>
-        <form action="/submit_form" method="post">
+        <form method="GET" action="/pages/feedback.html">
           <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required />
@@ -59,7 +59,7 @@
               required
             ></textarea>
           </div>
-          <a href="/pages/feedback.html" class="cta-button">Senden</a>
+          <button class="cta-button">Senden</button>
         </form>
       </section>
     </main>
