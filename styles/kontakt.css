@@ -161,6 +161,7 @@ header {
 .hero p {
   font-size: 1.2rem;
   margin: 30px 0;
+  padding: 0 5rem;
   color: #666;
 }
 
@@ -374,7 +375,7 @@ footer {
 }
 
 .footer-nav ul li a:hover {
-  color: #88be85;
+  color: #616845;
 }
 
 .footer-contact p {
@@ -387,7 +388,7 @@ footer {
 }
 
 .footer-contact a:hover {
-  color: #88be85;
+  color: #616845;
 }
 
 .footer-bottom {
@@ -415,5 +416,5 @@ footer {
 }
 
 .footer-links a:hover {
-  color: #88be85;
+  color: #616845;
 }
