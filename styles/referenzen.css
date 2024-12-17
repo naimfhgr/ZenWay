@@ -86,7 +86,7 @@ header {
 
 .hero p {
   font-size: 1.2rem;
-  margin-bottom: 10px;
+  margin: 30px 0;
   color: #666;
 }
 
@@ -151,8 +151,8 @@ header {
 
 /* Green Section */
 .green {
-background-color: #dddfd5;
-padding: 20px 20px;
+  background-color: #dddfd5;
+  padding: 20px 20px;
 }
 
 /* CTA Button */

@@ -7,7 +7,7 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  color: #333;
+  color: #0e162c;
   background-color: #f8f8f8;
   line-height: 1.6;
 }
@@ -24,6 +24,10 @@ header {
   z-index: 999;
   top: -10px;
   box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header-logo img {
+  height: 45px;
 }
 
 /* Navbar Styling */
@@ -70,6 +74,77 @@ header {
   transition: all 0.3s ease; /* Adds a cool & smooth transition :) */
 }
 
+/* Hamburger Menu - Hidden by Default */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background-color: #0e162c;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Checkbox Hidden */
+.nav-toggle {
+  display: none;
+}
+
+/* Mobile Navigation */
+@media screen and (max-width: 750px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #dddfd5;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: visible; /* Ensure visibility */
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+    z-index: 1000;
+    gap: 30px;
+  }
+
+  .navbar a {
+    font-size: 2rem;
+  }
+
+  /* Show Navigation When Checkbox is Checked */
+  .nav-toggle:checked ~ .navbar {
+    transform: translateX(0);
+  }
+
+  /* Hamburger Animation */
+  .nav-toggle:checked + .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translateY(11px);
+    background-color: #0e162c;
+  }
+
+  .nav-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle:checked + .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-12px);
+    background-color: #0e162c;
+  }
+}
+
 /* Hero Section */
 .hero {
   text-align: center;
@@ -96,14 +171,14 @@ header {
   font-size: 2.5rem;
   font-weight: bold;
   margin-top: 60px;
-  color: #ffffff;
+  color: #f8f8f8;
 }
 
 .first-hero p {
   font-size: 1.2rem;
   margin-bottom: 50px;
   margin-top: 25px;
-  color: #ffffff;
+  color: #f8f8f8;
 }
 
 .hero h1 {
@@ -127,7 +202,7 @@ header {
 }
 
 .block-home {
-  background-color: #dddfd5;
+  background-color: #f8f8f8;
   block-size: 5px;
   width: 5%;
   margin: 10px auto; /* Centers horizontally and adds top margin */
@@ -149,7 +224,7 @@ header {
 .green-section .text-content {
   flex: 1; /* Takes up half the section width */
   padding: 20px;
-  color: #333; /* Text color */
+  color: #0e162c; /* Text color */
 }
 
 .green-section .text-content h1 {
@@ -200,7 +275,7 @@ header {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid #ddd;
+  border: 1px solid #dddfd5;
   overflow: hidden;
   width: 300px;
   text-align: center;
@@ -250,7 +325,7 @@ header {
   height: 300px;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   margin-top: 150px;
 }
 
@@ -261,7 +336,7 @@ header {
   background-position: left;
   background-repeat: no-repeat;
   background-size: 20%;
-  position:absolute;
+  position: absolute;
   min-height: 200px;
 }
 
