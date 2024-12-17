@@ -189,23 +189,17 @@ header {
   grid-row: 1;
   grid-column: span 3;
 }
-.design_text {
+
+.design_text, .beratung_text, .umsetzung_text, .abonnement_text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 60px;
-  grid-column: span 2;
-  grid-row: 2;
   background-color: #dddfd5;
 }
 
-.design_img {
-  grid-column: 3;
-  grid-row: 2;
-  background-color: #dddfd5;
-}
 .design_img img,
 .umsetzung_img img,
 .beratung_img img,
@@ -215,79 +209,50 @@ header {
   object-fit: cover; /* skaliert Bild,um den Bereich zu füllen */
 }
 
-.white_space_1 {
+.white_space_1, .white_space_2, .white_space_3 {
   margin: 30px;
   padding: 30px;
-  grid-row: 3;
   grid-column: span 3;
 }
+
+.design_text {
+  grid-column: span 2;
+  grid-row: 2;
+}
+
+/*.design_img {
+  grid-column: 3;
+  grid-row: 2;
+} --> grid erkennt Position von selbst*/
 
 .beratung_img {
   grid-column: 1;
   grid-row: 4;
-  background-color: #dddfd5;
 }
 
 .beratung_text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 60px;
   grid-row: 4;
   grid-column: span 2;
-  background-color: #dddfd5;
-}
-
-.white_space_2 {
-  margin: 30px;
-  padding: 30px;
-  grid-row: 5;
-  grid-column: span 3;
 }
 
 .umsetzung_text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 60px;
   grid-column: span 2;
   grid-row: 6;
-  background-color: #dddfd5;
 }
 
-.umsetzung_img {
+/*.umsetzung_img {
   grid-column: 3;
   grid-row: 6;
-  background-color: #dddfd5;
-}
-
-.white_space_3 {
-  margin: 30px;
-  padding: 30px;
-  grid-row: 7;
-  grid-column: span 3;
-}
+} --> grid erkennt Position von selbst*/
 
 .abonnement_img {
   grid-column: 1;
   grid-row: 8;
-  background-color: #dddfd5;
 }
 
 .abonnement_text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 60px;
   grid-column: span 2;
   grid-row: 8;
-  background-color: #dddfd5;
 }
 
 /* Footer */
