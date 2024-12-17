@@ -11,19 +11,22 @@ body {
   background-color: #f9f9f9;
   line-height: 1.6;
 }
-
 /* Header Styling */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #f8f8f8;
+  background-color: #f9f9f9;
   border-bottom: 1px solid #ddd;
   position: sticky;
   z-index: 999;
   top: -10px;
   box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header-logo img {
+  height: 45px;
 }
 
 /* Navbar Styling */
@@ -43,7 +46,6 @@ header {
 .navbar li a {
   text-decoration: none;
   color: #0e162c;
-  font-weight: 500;
 }
 
 .navbar li a:hover {
@@ -68,6 +70,77 @@ header {
   background-color: #dddfd5;
   color: #616845;
   transition: all 0.3s ease; /* Adds a cool & smooth transition :) */
+}
+
+/* Hamburger Menu - Hidden by Default */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background-color: #0e162c;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Checkbox Hidden */
+.nav-toggle {
+  display: none;
+}
+
+/* Mobile Navigation */
+@media screen and (max-width: 750px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #dddfd5;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: visible; /* Ensure visibility */
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+    z-index: 1000;
+    gap: 30px;
+  }
+
+  .navbar a {
+    font-size: 2rem;
+  }
+
+  /* Show Navigation When Checkbox is Checked */
+  .nav-toggle:checked ~ .navbar {
+    transform: translateX(0);
+  }
+
+  /* Hamburger Animation */
+  .nav-toggle:checked + .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translateY(11px);
+    background-color: #0e162c;
+  }
+
+  .nav-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle:checked + .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-12px);
+    background-color: #0e162c;
+  }
 }
 
 /* Hero Section */
